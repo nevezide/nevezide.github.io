@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Le flow</title>
+    <style>
+      body {
+        margin: 0px;
+      }
+      .parent {
+        background-color: sandybrown;
+        padding: 10px;
+        margin: 10px;
+        height: 100px;
+        border: 1px solid black;
+      }
+      .child {
+        background-color: aqua;
+        height: 20px;
+        border: 1px solid black;
+      }
+      .fixed {
+        position: fixed;
+        background-color: lightblue;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid blue;
+      }
+      .top {
+        top: 0px;
+      }
+      .bottom {
+        bottom: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fixed top">Element fixé en haut</div>
+    <div class="parent"></div>
+    <div class="parent"></div>
+    <div class="parent"></div>
+    <div class="fixed bottom">Element fixé en bas</div>
+  </body>
+</html>
