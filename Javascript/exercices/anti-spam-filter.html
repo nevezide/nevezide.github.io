@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <script language="javascript" type="text/javascript">
+    var liste_blanche = ['larissa@gmail.com', 'hacker44@gmail.com'];
+    var email_recus = [{
+      from: 'toto@gmail.com',
+      content: 'Bonjour toi !',
+    },{
+      from: 'larissa@gmail.com',
+      content: 'Hé Salut !',
+    },{
+      from: 'hacker44@gmail.com',
+      content: 'Je suis un hacker !',
+    },{
+      from: 'hacker@gmail.com',
+      content: 'Piratage en cours...',
+    }];
+
+    var nouveaux_emails = [];
+
+    email_recus.forEach(element => {
+      if (liste_blanche.indexOf(element.from) > -1) {
+        nouveaux_emails.push(element);
+      }
+    });
+
+    console.log(nouveaux_emails);
+  </script>
+</body>
+</html>
