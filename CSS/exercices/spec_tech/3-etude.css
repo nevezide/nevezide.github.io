@@ -1,0 +1,20 @@
+h1 {
+  text-align:center;
+}
+
+p > span {
+  font-weight: bold;
+}
+
+.existing {
+  text-align: center;
+}
+
+.existing > img {
+  width: 50%;
+}
+
+li img {
+  vertical-align: middle;
+  width:50px;
+}

@@ -1,0 +1,52 @@
+h1 {
+  text-align:center;
+}
+
+p > span {
+  font-weight: bold;
+}
+
+.existing {
+  text-align: center;
+}
+
+.existing > img {
+  width: 50%;
+}
+
+li img {
+  vertical-align: middle;
+  width:50px;
+}
+
+.solution {
+  text-align: center;
+}
+
+.solution span {
+  font-size: 24px;
+}
+
+.solution .custom-family {
+  font-family: Courier;
+}
+
+.pros {
+  background-color: chartreuse;
+}
+
+.cons {
+  background-color: salmon;
+}
+
+.production {
+  color: red;
+}
+
+.tests {
+  font-weight:bold;
+}
+
+.procedure {
+  text-align: center;
+}
