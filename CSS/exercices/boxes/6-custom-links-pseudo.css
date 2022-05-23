@@ -1,0 +1,17 @@
+a {
+  padding: 10px 20px;
+  margin-left: 20px;
+  background-color: crimson;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  background-color: salmon;
+  color: gold;
+}
+
+a:active {
+  background-color: greenyellow;
+  color: gold;
+}

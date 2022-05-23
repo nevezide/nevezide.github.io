@@ -1,0 +1,17 @@
+* {
+  margin: 0em;
+  padding: 0em;
+  text-decoration: none;
+  list-style-type: none;
+}
+.parent {
+  background-color: red;
+  padding: 0.25em;
+}
+.child {
+  background-color: green;
+  font-size: 0.5em;
+  padding: 0.25em;
+  margin: 0.25em;
+  border: 0.25em solid black;
+}

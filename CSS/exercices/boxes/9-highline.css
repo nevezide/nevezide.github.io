@@ -1,0 +1,9 @@
+div {
+  display: inline;
+  padding: 10px;
+  margin: 10px;
+  background-color: turquoise;
+  color: grey;
+  width: 150px;
+  text-align: center;
+}
