@@ -1,0 +1,16 @@
+ul {
+  font-size: 20px;
+  padding: 0px;
+  background-color: aqua;
+  padding: 0.5em;
+  border: 1px solid grey;
+}
+
+li {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 1em;
+  background-color: aquamarine;
+  border: 1px solid grey;
+}
