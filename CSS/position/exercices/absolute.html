@@ -2,9 +2,6 @@
   <head>
     <title>Le flow</title>
     <style>
-      body {
-        margin: 0px;
-      }
       .parent {
         background-color: sandybrown;
         padding: 10px;
@@ -17,26 +14,18 @@
         height: 20px;
         border: 1px solid black;
       }
-      .fixed {
-        position: fixed;
-        background-color: lightblue;
-        width: 100%;
-        padding: 10px;
-        border: 1px solid blue;
-      }
-      .top {
-        top: 0px;
-      }
-      .bottom {
-        bottom: 0px;
+      .absolute {
+        position: absolute;
+        left: 30px;
+        top: 20px;
       }
     </style>
   </head>
   <body>
-    <div class="fixed top">Element fixé en haut</div>
     <div class="parent"></div>
     <div class="parent"></div>
-    <div class="parent"></div>
-    <div class="fixed bottom">Element fixé en bas</div>
+    <div class="parent absolute">
+      Je suis positionné par rapport à mon container parent
+    </div>
   </body>
 </html>

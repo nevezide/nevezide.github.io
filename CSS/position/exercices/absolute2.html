@@ -16,19 +16,23 @@
       }
       .relative {
         position: relative;
+      }
+      .absolute {
+        position: absolute;
         left: 30px;
+        top: 20px;
       }
     </style>
   </head>
   <body>
     <div class="parent"></div>
     <div class="parent relative">
-      Parent positionné par rapport à sa position d'origine
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child absolute">Je suis positionné par rapport à mon container parent</div>
     </div>
     <div class="parent">
-      <div class="child"></div>
-      <div class="child relative">Enfant positionné par rapport à sa position d'origine</div>
-      <div class="child"></div>
+      <div class="child absolute">Je suis positionné par rapport à mon container parent</div>
     </div>
   </body>
 </html>
