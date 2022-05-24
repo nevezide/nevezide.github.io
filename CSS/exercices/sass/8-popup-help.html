@@ -86,12 +86,17 @@
           .left-panel ul {
             padding: 0px;
           }
-          .left-panel li {
+          .left-panel li a {
             display: block;
             width: 100%;
             box-sizing: border-box;
             padding: 10px;
             text-align: center;
+            color: inherit;
+            text-decoration: none;
+          }
+          .left-panel li a:hover {
+            background-color: lightgrey;
           }
           main .content {
             margin-left: 150px;
@@ -236,9 +241,9 @@
         <main>
           <div id="left-panel" class="left-panel">
             <ul>
-              <li>Ajouter</li>
-              <li>Mes recettes</li>
-              <li>Plan menu</li>
+              <li><a href="">Ajouter</a></li>
+              <li><a href="">Mes recettes</a></li>
+              <li><a href="">Plan menu</a></li>
             </ul>
           </div>
           <div class="content">
