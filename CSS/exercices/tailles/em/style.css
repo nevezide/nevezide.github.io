@@ -4,9 +4,11 @@
   text-decoration: none;
   list-style-type: none;
 }
+
 .parent {
   background-color: red;
   padding: 0.25em;
+  font-size: 0.8em;
 }
 .child {
   background-color: green;
