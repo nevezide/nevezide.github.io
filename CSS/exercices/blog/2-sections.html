@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <title>Nevezide School On Github - CSS - Blog</title>
+    <style>
+      body {
+        margin: 0px;
+      }
+      .page-header {
+        box-shadow: 0 3px 5px rgb(0 0 0 / 10%);
+        text-align: center;
+        padding-top: 20px;
+      }
+      .page-header ul {
+        padding: 0px;
+      }
+      .page-header li {
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 10px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .page-header li:first-child {
+        color: red;
+      }
+      section h1 {
+        padding-left: 20px;
+      }
+      .description {
+        display: block;
+        padding: 20px;
+        text-align: center;
+        color: grey;
+        font-weight: bold;
+      }
+      .article-container {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+      .up-arrow {
+        position: fixed;
+        bottom: 50px;
+        right: 10px;
+        background-color: brown;
+      }
+      section {
+        padding-bottom: 20px;
+      }
+      footer {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        background-color: black;
+        color: white;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>Un blog sur le développement web</h1>
+      <ul>
+        <li>Accueil</li>
+        <li>A propos</li>
+        <li>Frontend</li>
+        <li>Backend</li>
+        <li>Contact</li>
+      </ul>
+    </header>
+    <main>
+      <section>
+        <header>
+          <h1>Actualités frontend</h1>
+          <hr />
+          <div class="description">Voici les actualités de ces derniers jours, bonne lecture !</div>  
+        </header>
+        <main class="article-container">
+        </main>
+      </section>
+      <section>
+        <header>
+          <h1>Actualités backend</h1>
+          <hr />
+          <div class="description">Voici les actualités de ces derniers jours, bonne lecture !</div>  
+        </header>
+        <main class="article-container">
+        </main>
+      </section>
+      <a href="#top"><img class="up-arrow" src="https://wp.bwlthemes.com/wp_reddrop_buddies/wp-content/plugins/reddrop-buddies-vc-addons/public/assets/images/uparr-48-b.png" /></a>
+    </main>
+    <footer>&copy; Nevezide 2022</footer>
+  </body>
+</html>

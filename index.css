@@ -1,32 +1,50 @@
-div, header {
-  padding: 10px;
-  height: 40px;
-  width: 100%;
+* {
   box-sizing: border-box;
-  text-align: center;
-  display: block;
-  margin-bottom: 10px;
 }
+
+body {
+  margin:0;
+  padding:0;
+}
+
 header {
   background-color: lightgrey;
-  position: fixed;
-  top: 0px;
-  left: 0px;
+  font-size: 24px;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid darkgrey;
 }
 
 nav {
-  margin-top: 50px;
+  padding: 10px;
+  width: 100%;
+  background-color: whitesmoke;
+  box-sizing: border-box;
+  border-bottom: 1px solid darkgrey;
 }
 
 nav div {
-  border: 1px solid grey;
+  border: 1px solid darkgrey;
+  background-color: whitesmoke;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  height: 40px;
 }
 
-a {
+nav a {
   text-decoration: none;
   color: black;
 }
 
-a:hover div {
-  background-color: #f4f4f4;
+nav a:hover div {
+  background-color: white;
+}
+
+main {
+  padding: 10px;
+  width: 100%;
 }
