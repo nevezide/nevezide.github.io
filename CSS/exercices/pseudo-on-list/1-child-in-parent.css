@@ -1,4 +1,4 @@
-ul {
+.parent {
   font-size: 20px;
   padding: 0px;
   background-color: aqua;
@@ -6,7 +6,7 @@ ul {
   border: 1px solid grey;
 }
 
-li {
+.child {
   display: block;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
