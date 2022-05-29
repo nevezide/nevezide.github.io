@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <script language="javascript" type="text/javascript">
+    /* Règles :
+       - Choix aléatoire de l'ordinateur entre : feuille / pierre / ciseaux
+       - Demander à l'utilisateur son choix entre : feuille / pierre / ciseaux
+       => Vérifier sa saisie
+       - Déterminer le vainqueur
+     */
+    var allowedChoices = ['feuille', 'pierre', 'ciseaux'];
+
+    while (true) {
+      var computerChoice = allowedChoices[
+        Math.round(Math.random() * 3)
+      ];
+      var userChoice = prompt("Choisissez entre feuille, pierre et ciseaux");
+
+      if (allowedChoices.indexOf(userChoice) === -1) {
+        alert("Vous n'avez pas choisi entre feuille, pierre et ciseaux");
+      } else {
+        alert(
+          "L'ordinateur a choisi " + 
+          computerChoice +
+          " et vous avez choisi " +
+          userChoice +
+          " donc " +
+          (computerChoice === userChoice ? "égalité" :
+            (computerChoice === 'feuille' && userChoice === 'pierre' ? "ordinateur gagne" :
+              (computerChoice === 'pierre' && userChoice === 'ciseaux' ? "ordinateur gagne" :
+                (computerChoice === 'ciseaux' && userChoice === 'feuille' ? "ordinateur gagne" :
+                  "vous gagnez"
+                )
+              )
+            )
+          )
+        );
+      }
+    }
+  </script>
+</body>
+</html>
