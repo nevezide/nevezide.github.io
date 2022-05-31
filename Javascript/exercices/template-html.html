@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <script language="javascript" type="text/javascript">
+    var template = '\
+      <html>\n\
+        <head>\n\
+          <title>{{title}}</title>\n\
+        </head>\n\
+        <body>\n\
+          <h1>{{title}}</h1>\n\
+          <p>{{text}}</p>\n\
+        </body>\n\
+      </html>';
+
+    var data = {
+      title: 'My page',
+      text: 'This is my page'
+    };
+
+    var html = template
+      .replaceAll('{{title}}', data.title)
+      .replaceAll('{{text}}', data.text);
+
+    console.log(html);
+  </script>
+</body>
+</html>
