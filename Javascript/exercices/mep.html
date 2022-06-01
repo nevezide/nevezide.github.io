@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <script language="javascript" type="text/javascript">
+    var jour = prompt("quel est le jour de la semaine ?");
+    var hasAstreinte = confirm("y a-t-il une astreinte ?");
+
+    if ( (jour === 'jeudi' || jour === 'vendredi') && ! hasAstreinte ) {
+      alert("Pas de MEP en fin de semaine !");
+    } else {
+      var areTestsValid = prompt("Les tests sont-il passés avec succès ?");
+      var areFoncValid = prompt("La recette est-elle passée avec succès ?");
+      if (areTestsValid && areFoncValid) {
+        alert("MEP Autorisée");
+      } else {
+        alert("Veuillez effectuer les corrections et rééssayez");
+      }
+    }
+  </script>
+</body>
+</html>
