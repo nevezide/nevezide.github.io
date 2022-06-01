@@ -19,34 +19,32 @@
      */
     var allowedOperators = "+-*/";
 
-    while (true) {
-      var userInput1 = parseFloat(
-        prompt("Entrez un nombre")
-      );
-      var userOperator = prompt("Entrez un opérateur");
-      var userInput2 = parseFloat(
-        prompt("Entrez un second nombre")
-      );
+    var userInput1 = parseFloat(
+      prompt("Entrez un nombre")
+    );
+    var userOperator = prompt("Entrez un opérateur");
+    var userInput2 = parseFloat(
+      prompt("Entrez un second nombre")
+    );
 
-      if(isNaN(userInput1) || isNaN(userInput2)) {
-        alert("Vous n'avez pas entré un nombre");
-      } else if (allowedOperators.indexOf(userOperator) === -1) {
-        alert("Vous n'avez pas entré un opérateur autorisé");
-      } else {
-        switch(userOperator) {
-          case "+":
-            alert(userInput1 + userInput2);
-            break;
-          case "-":
-            alert(userInput1 - userInput2);
-            break;
-          case "*":
-            alert(userInput1 * userInput2);
-            break;
-          case "/":
-            alert(userInput1 / userInput2);
-            break;
-        }
+    if(isNaN(userInput1) || isNaN(userInput2)) {
+      alert("Vous n'avez pas entré un nombre");
+    } else if (allowedOperators.indexOf(userOperator) === -1) {
+      alert("Vous n'avez pas entré un opérateur autorisé");
+    } else {
+      switch(userOperator) {
+        case "+":
+          alert(userInput1 + userInput2);
+          break;
+        case "-":
+          alert(userInput1 - userInput2);
+          break;
+        case "*":
+          alert(userInput1 * userInput2);
+          break;
+        case "/":
+          alert(userInput1 / userInput2);
+          break;
       }
     }
   </script>
