@@ -13,35 +13,51 @@
        => Vérifier sa saisie
        - Déterminer le vainqueur
      */
-    var allowedChoices = ['feuille', 'pierre', 'ciseaux'];
+    var randomChoice = Math.round(Math.random() * 3);
+    var computerChoice = '';
+    var userChoice = '';
+    var resultat = '';
 
-    while (true) {
-      var computerChoice = allowedChoices[
-        Math.round(Math.random() * 3)
-      ];
-      var userChoice = prompt("Choisissez entre feuille, pierre et ciseaux");
+    if (randomChoice === 0) {
+      computerChoice = 'feuille';
+    } else if (randomChoice === 1) {
+      computerChoice = 'pierre';
+    } else {
+      computerChoice = 'ciseaux';
+    }
 
-      if (allowedChoices.indexOf(userChoice) === -1) {
-        alert("Vous n'avez pas choisi entre feuille, pierre et ciseaux");
+    userChoice = prompt("Choisissez entre feuille, pierre et ciseaux");
+
+    if (computerChoice === userChoice) {
+      resultat = 'égalité';
+    } else if (computerChoice === 'feuille') {
+      if (userChoice === 'pierre') {
+        resultat = 'ordinateur gagne';
       } else {
-        alert(
-          "L'ordinateur a choisi " + 
-          computerChoice +
-          " et vous avez choisi " +
-          userChoice +
-          " donc " +
-          (computerChoice === userChoice ? "égalité" :
-            (computerChoice === 'feuille' && userChoice === 'pierre' ? "ordinateur gagne" :
-              (computerChoice === 'pierre' && userChoice === 'ciseaux' ? "ordinateur gagne" :
-                (computerChoice === 'ciseaux' && userChoice === 'feuille' ? "ordinateur gagne" :
-                  "vous gagnez"
-                )
-              )
-            )
-          )
-        );
+        resultat = 'vous gagnez';
+      }
+    } else if (computerChoice === 'pierre') {
+      if (userChoice === 'ciseaux') {
+        resultat = 'ordinateur gagne';
+      } else {
+        resultat = 'vous gagnez';
+      }
+    } else {
+      if (userChoice === 'feuille') {
+        resultat = 'ordinateur gagne';
+      } else {
+        resultat = 'vous gagnez';
       }
     }
+
+    alert(
+      "L'ordinateur a choisi " + 
+      computerChoice +
+      " et vous avez choisi " +
+      userChoice +
+      " donc " +
+      resultat
+    );
   </script>
 </body>
 </html>
