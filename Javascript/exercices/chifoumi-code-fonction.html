@@ -7,99 +7,116 @@
 </head>
 <body>
   <script language="javascript" type="text/javascript">
+
     const NB_MANCHES = 3;
 
-    var computerWins = 0;
-    var userWins = 0;
+    var scores = {
+      ordinateur: 0,
+      user: 0,
+    };
 
-    function ordinateurChoisi() {
-      var computerChoice = '';
+
+    function computerChoose() {
       var randomChoice = Math.round(Math.random() * 3);
       switch(randomChoice) {
         case 0:
-          computerChoice = 'feuille';
-          break;
+          return 'feuille';
         case 1:
-          computerChoice = 'pierre';
-          break;
-        case 2:
-          computerChoice = 'ciseaux';
-          break;
+          return 'pierre';
+        default:
+          return 'ciseaux';
       }
-      return computerChoice;
     }
 
-    function joueurChoisi() {
-      var userChoice = prompt("Choisissez entre feuille, pierre et ciseaux");
-      return userChoice;
-    }
-
-    function comparer(userChoice, computerChoice) {
-      var resultat = '';
-
+    function checkWhoWins(computerChoice, userChoice) {
       if (computerChoice === userChoice) {
-        resultat = 'égalité';
-      } else {
-        switch(userChoice) {
-          case 'feuille':
-            if (computerChoice === 'pierre') {
-              resultat = 'vous gagnez';
-            } else {
-              resultat = 'ordinateur gagne';
-            }
-            break;
-          case 'pierre':
-            if (computerChoice === 'ciseaux') {
-              resultat = 'vous gagnez';
-            } else {
-              resultat = 'ordinateur gagne';
-            }
-            break;
-          case 'ciseaux':
-            if (computerChoice === 'feuille') {
-              resultat = 'vous gagnez';
-            } else {
-              resultat = 'ordinateur gagne';
-            }
-            break;
-        }
+        return 'egalite';
       }
-      return resultat;
+
+      switch(userChoice) {
+        case 'feuille':
+          if (computerChoice === 'pierre') {
+            return 'vous gagnez';
+          } else {
+            return 'ordinateur gagne';
+          }
+          break;
+        case 'pierre':
+          if (computerChoice === 'ciseaux') {
+            return 'vous gagnez';
+          } else {
+            return 'ordinateur gagne';
+          }
+          break;
+        case 'ciseaux':
+          if (computerChoice === 'feuille') {
+            return 'vous gagnez';
+          } else {
+            return 'ordinateur gagne';
+          }
+          break;
+        }
     }
 
-    function afficherResultatManche(resultat) {
-      alert(resultat);
+    function calculerScore(scores, resultat) {
+        switch(resultat) {
+            case 'ordinateur gagne':
+                scores.ordinateur = scores.ordinateur + 1;
+                break;
+            case 'vous gagnez':
+                scores.user = scores.user + 1;
+                break;
+        }
+        return scores;
     }
 
-    function afficherResultatFinal(userWins, computerWins) {
-      if (computerWins > userWins) {
+    function afficherResultatFinal(scores) {
+      if (scores.ordinateur > scores.user) {
         alert('Vous avez perdu');
-      } else if (computerWins < userWins) {
+      } else if (scores.ordinateur < scores.user) {
         alert('Vous avez gagné');
       } else {
         alert('égalité');
       }
     }
 
+
+    // Algorithme principal
+
     for (var i = 0; i < NB_MANCHES; i++) {
-      var computerChoice = ordinateurChoisi();
-      var userChoice = joueurChoisi();
+      // Choix de l'ordinateur
+      var computerChoice = computerChoose();
 
-      var resultat = comparer(userChoice, computerChoice);
-
-      if (resultat === 'vous gagnez') {
-        userWins++;
-      } else if (resultat === 'ordinateur gagne') {
-        computerWins++;
-      } else {
-        alert('Vous devez choisir entre feuille, pierre et ciseaux');
-        i--;
+      // Choix de l'utilisateur
+      var userChoice = '';
+      while (['pierre', 'feuille', 'ciseaux'].indexOf(userChoice) === -1) {
+        userChoice = prompt("Choisissez entre feuille, pierre et ciseaux");
       }
 
-      afficherResultatManche(resultat);
+      // Détermination du gagnant de la manche
+      var resultat = checkWhoWins(computerChoice, userChoice);
+
+      // Calcul du score total
+      scores = calculerScore(scores, resultat);
+
+      // Affichage du résultat
+      alert(
+        "L'ordinateur a choisi " + 
+        computerChoice +
+        " et vous avez choisi " +
+        userChoice +
+        " donc " +
+        resultat +
+        ", score ordinateur - vous : " +
+        scores.ordinateur +
+        " - " +
+        scores.user
+      );
     }
 
-    afficherResultatFinal(userWins, computerWins);
+    // Les 3 manches réalisées, affichage résultat final
+    afficherResultatFinal(scores);
+
   </script>
 </body>
 </html>
