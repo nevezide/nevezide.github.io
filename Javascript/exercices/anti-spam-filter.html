@@ -7,7 +7,11 @@
 </head>
 <body>
   <script language="javascript" type="text/javascript">
-    var liste_blanche = ['larissa@gmail.com', 'hacker44@gmail.com'];
+    var liste_blanche = [
+      'larissa@gmail.com',
+      'hacker44@gmail.com'
+    ];
+
     var email_recus = [{
       from: 'toto@gmail.com',
       content: 'Bonjour toi !',
@@ -24,11 +28,25 @@
 
     var nouveaux_emails = [];
 
-    email_recus.forEach(element => {
-      if (liste_blanche.indexOf(element.from) > -1) {
-        nouveaux_emails.push(element);
+    for (var i = 0; i < email_recus.length; i++) {
+      var receivedEmail = email_recus[i];
+
+      // Méthode 1
+      for (var j = 0; j < liste_blanche.length; j++) {
+        var whiteEmail = liste_blanche[j];
+
+        if (receivedEmail.from === whiteEmail) {
+          nouveaux_emails.push(receivedEmail);
+        }
       }
-    });
+
+      // Méthode 2
+      /*
+      if (liste_blanche.indexOf(receivedEmail.from) > -1) {
+        nouveaux_emails.push(receivedEmail);
+      }
+      */
+    }
 
     console.log(nouveaux_emails);
   </script>
