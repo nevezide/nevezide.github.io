@@ -1,0 +1,63 @@
+div {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.clear {
+    clear: both;
+    border: 0;
+}
+
+.circle {
+    float: left;
+    margin-right: 10px;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+}
+
+.rainbow {
+    background-image: linear-gradient(90deg, #F22, #F2F, #22F, #2FF, #2F2, #FF2, #F22);
+}
+
+.degrade-r {
+    background-image: linear-gradient(90deg, #000 -10%, #F00 33%, #FFF 110%);
+}
+.degrade-g {
+    background-image: linear-gradient(90deg, #000 -10%, #0F0 33%, #FFF 110%);
+}
+.degrade-b {
+    background-image: linear-gradient(90deg, #000 -10%, #00F 33%, #FFF 110%);
+}
+
+.circle-r {
+    background-image: radial-gradient(ellipse, #000 -10%, #F00, #FFF 85%);
+}
+.circle-g {
+    background-image: radial-gradient(ellipse, #000 -10%, #0F0, #FFF 85%);
+}
+.circle-b {
+    background-image: radial-gradient(ellipse, #000 -10%, #00F, #FFF 85%);
+}
+
+.complex {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(ellipse at top, #e66465, transparent),
+                radial-gradient(ellipse at bottom, #4d9f0c, transparent);
+}
+.complex-circle {
+	margin: 20px;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: linear-gradient(0deg, rgba(0, 255, 217, 0.4) 50%, transparent 0%),
+	            linear-gradient(45deg, rgba(0, 128, 0, 0.4) 50%, transparent 0%),
+	            linear-gradient(90deg, rgba(11, 255, 0, 0.4) 50%, transparent 0%),
+	            linear-gradient(135deg, pink 50%, transparent 0%),
+	            linear-gradient(180deg, brown 50%, transparent 0%),
+	            linear-gradient(225deg, yellow 50%, transparent 0%),
+	            linear-gradient(270deg, red 50%, transparent 0%);
+	position: relative;
+	overflow: hidden;
+}
