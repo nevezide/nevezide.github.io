@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Héritage et cascade</title>
+    <style>
+        body {
+            font-size: 8px;
+            color: #666;
+            margin: 100px;
+        }
+        section > p {
+            font-size: 14px;
+            color: #333;
+        }
+        .inherit-p {
+            all: inherit;
+        }
+        .initial-p {
+            all: initial;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section>
+            <p>
+                Lorem ipsum : j'ai mes propres propriétés
+            </p>
+            <p class="inherit-p">
+                Lorem ipsum : bien que j'ai mes propres propriétés, je force le style hérité de body
+            </p>
+            <article>
+                <p>
+                    <span>J'hérite des propriétés de body qui est mon parent :</span>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, ullam, odio, delectus, ea quis doloremque eos veniam id at ducimus autem similique dolorum totam placeat in laudantium quod praesentium doloribus.</span>
+                    <span>Repellendus, accusamus, eligendi obcaecati reiciendis consequatur mollitia veritatis ea dolores dignissimos debitis eveniet alias molestias minus eos placeat quae aspernatur doloremque odit sunt non rem laboriosam illo omnis quis nesciunt.</span>
+                    <span>Cumque, possimus aliquam consectetur accusamus facilis. Praesentium, repellendus, deserunt quaerat accusamus omnis error repellat sunt quasi ex dolorem labore consequatur rem nobis nam consectetur illum libero eveniet! Aspernatur, iure accusantium.</span>
+                    <span>Placeat, laborum dolorem consectetur vero rem expedita voluptatum dolore amet ab earum ducimus quod vitae corporis similique mollitia magnam modi nobis fugiat consequatur voluptates beatae culpa soluta provident inventore fuga!</span>
+                    <span>Obcaecati, quibusdam voluptate quis ut quae. Debitis, voluptates, consequuntur blanditiis dolorum sapiente similique eius consectetur soluta eaque assumenda non ipsam deserunt doloremque dignissimos tempore aperiam adipisci veniam nisi distinctio vitae.</span>
+                    <span>Impedit, facere, laboriosam, suscipit, voluptatem recusandae quam alias repellendus illo nam accusantium corporis enim ea maxime provident quidem commodi voluptatibus iste rerum! Vitae, molestias eius quae magni reiciendis perferendis omnis!</span>
+                    <span>Ipsam, quae, deleniti dolor facere dolorum illo a dolore praesentium vitae tempora in cumque libero eaque obcaecati veritatis maxime neque perferendis quod laborum exercitationem. Magni suscipit quis adipisci nulla voluptate.</span>
+                    <span>Similique, quae, facilis, quas doloremque quidem voluptas molestias enim hic iste sit dolore cupiditate explicabo expedita inventore deleniti. Assumenda, adipisci, blanditiis ea cupiditate accusantium repellat nulla ipsa omnis hic dignissimos.</span>
+                    <span>Nihil, adipisci, architecto, illum ad officiis alias incidunt sunt itaque modi sed eum sint eius quo repudiandae repellendus dolores nostrum qui doloremque aut ut culpa eligendi delectus inventore ipsum unde.</span>
+                    <span>Alias, libero, magnam iste expedita laudantium ratione temporibus soluta et in cumque laborum nihil eaque maxime. Sit, doloremque quod aliquid dolorem dolorum? Natus aperiam a beatae labore dicta et doloribus.</span>
+                </p>
+                <p class="initial-p">
+                    Bien que j'hérite des propriétés de body, je force le style du navigateur : 
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, eius, id, eos dolore recusandae inventore placeat ab non ducimus sequi accusantium perferendis reprehenderit ipsum repellendus sapiente similique totam est corporis.</span><span>Vero, ea, ipsam perspiciatis est vel inventore temporibus quis possimus officia harum obcaecati nisi consectetur culpa adipisci autem. Ex, quis accusamus libero rerum voluptate aperiam repellendus voluptates vitae eum distinctio!</span>
+                </p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
