@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: sans-serif;
+}
+
 body {
   margin:0;
   padding:0;
@@ -9,42 +13,81 @@ body {
 
 header {
   background-color: lightgrey;
-  font-size: 24px;
-  height: 50px;
-  line-height: 50px;
+  line-height: 4rem;
   width: 100%;
   text-align: center;
   border-bottom: 1px solid darkgrey;
+}
+h1 {
+  margin: 0rem;
 }
 
 nav {
   padding: 10px;
   width: 100%;
-  background-color: whitesmoke;
   box-sizing: border-box;
   border-bottom: 1px solid darkgrey;
 }
 
-nav div {
+nav > a {
+  text-decoration: none;
+  color: black;
+}
+
+nav > a > div {
   border: 1px solid darkgrey;
   background-color: whitesmoke;
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   text-align: center;
-  height: 40px;
 }
 
-nav a {
-  text-decoration: none;
-  color: black;
-}
-
-nav a:hover div {
+nav > a:hover > div {
   background-color: white;
 }
 
 main {
   padding: 10px;
   width: 100%;
+}
+
+/***** New version ******/
+.exercice {
+  border: 1px solid darkgrey;
+  border-radius: 0.375rem;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 0.6rem;
+  color: dimgrey;
+}
+.exercice h2 {
+  margin: 0rem;
+  margin-bottom: 1rem;
+}
+
+.exercice-content {
+  display: flex;
+  justify-content: space-around;
+}
+.exercice-content a {
+  width: 50%;
+  border: 1px solid darkgrey;
+  padding: 0.6rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 0.375rem;
+  text-align: center;
+}
+.exercice-content .instruction {
+  background-color: #0d6efd;
+}
+.exercice-content .instruction:hover {
+  background-color: #0b5ed7;
+}
+.exercice-content .correction {
+  background-color: #6c757d;
+}
+.exercice-content .correction:hover {
+  background-color: #5c636a;
 }
