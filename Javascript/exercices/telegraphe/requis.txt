@@ -1,5 +1,0 @@
-console
-variables
-prompt
-tableaux (split, indexOf, push, length)
-for

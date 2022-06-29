@@ -1,9 +1,0 @@
-console.log
-alert
-prompt
-parseInt
-if-else
-ET / OU
-while, continue, break
-for
-tableaux
