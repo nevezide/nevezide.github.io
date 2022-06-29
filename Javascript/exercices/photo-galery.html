@@ -28,7 +28,7 @@
 <body>
   <script language="javascript" type="text/javascript">
     // Photo gallery
-    var photoDataList = [
+    let photoDataList = [
       {
         src: 'https://www.w3schools.com/w3images/fjords.jpg',
         alt: 'Fjords',
@@ -56,7 +56,7 @@
     ];
 
     function createPhotoHTMLElement(photoData) {
-      var photoItem = document.createElement('img');
+      let photoItem = document.createElement('img');
 
       photoItem.src = photoData.src;
       photoItem.alt = photoData.alt;
@@ -68,16 +68,16 @@
     }
 
     function createGallery (photoDataList) {
-      var gallery = document.createElement('div');
+      let gallery = document.createElement('div');
       gallery.className = 'gallery';
       document.body.appendChild(gallery);
 
-      for (var i = 0; i < photoDataList.length; i++) {
-        var photoItem = createPhotoHTMLElement(photoDataList[i]);
+      for (let i = 0; i < photoDataList.length; i++) {
+        let photoItem = createPhotoHTMLElement(photoDataList[i]);
         gallery.appendChild(photoItem);
       }
 
-      var leftButton = document.createElement('button');
+      let leftButton = document.createElement('button');
       leftButton.innerHTML = '&#10094;';
       leftButton.className = 'gallery-button button-left';
       leftButton.onclick = function() {
@@ -85,7 +85,7 @@
       }
       gallery.appendChild(leftButton);
 
-      var rightButton = document.createElement('button');
+      let rightButton = document.createElement('button');
       rightButton.innerHTML = '&#10095;';
       rightButton.className = 'gallery-button button-right';
       rightButton.onclick = function() {
@@ -95,12 +95,12 @@
     }
 
     function showItem(n) {
-      var items = document.getElementsByClassName("gallery-item");
+      let items = document.getElementsByClassName("gallery-item");
 
       if (n > items.length) {slideIndex = 1}
       if (n < 1) {slideIndex = items.length}
 
-      for (var i = 0; i < items.length; i++) {
+      for (let i = 0; i < items.length; i++) {
         items[i].style.display = "none";
       }
 
@@ -111,7 +111,7 @@
       showItem(slideIndex += n);
     }
 
-    var slideIndex = 1;
+    let slideIndex = 1;
 
     createGallery(photoDataList);
     showItem(slideIndex);
