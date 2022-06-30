@@ -15,19 +15,22 @@ let codeMorse = [
 let userInput = prompt("Saisir le texte à télégraphier");
 
 // Convertir le texte en code morse
-let userInputArray = userInput.split("");
-let userInputArrayLength = userInputArray.length;
+let userInputLength = userInput.length;
 let outputCodeMorse = [];
 
-for (let i = 0; i < userInputArrayLength; i++) {
-  let userInputArrayElement = userInputArray[i];
-  let position = alphabet.indexOf(userInputArrayElement);
+for (let i = 0; i < userInputLength; i++) {
+  let userInputLettre = userInput[i];
 
-  outputCodeMorse.push(
-    codeMorse[position]
-  );
+  for (let j = 0; j < alphabet.length; j++) {
+    let lettre = alphabet[j];
+
+    if (lettre === userInputLettre) {
+      outputCodeMorse.push(
+        codeMorse[j]
+      );
+    }
+  }
 }
-
 
 // Afficher le code morse dans la console
 console.log(outputCodeMorse);
