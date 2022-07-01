@@ -23,31 +23,30 @@ while (nbArticlesDisponibles > 0) {
   // Afficher la liste des articles disponibles
   console.log(articles);
 
-  // Demande au client quel article il veut acheter
-  let articleVoulu = prompt('Quel article voulez-vous acheter ?');
+  // Demander au client quel article il veut acheter
+  let articleVoulu = prompt('Quel article voulez-vous acheter ?')
 
-  // Vérifie si l'article est disponible
+  // Vérifier si l'article est disponible
   let i;
-  for (i = 0; i < articles.length; i++) {
-    if (articleVoulu === articles[i]) {
-      // Si oui, afficher Ok
-      console.log('Ok');
-      // Remplacer par une chaine vide '' dans le tableau
-      articles[i] = '';
+  for(i = 0; i < articles.length ; i++) {
+    if(articles[i] === articleVoulu) {
       break;
     }
   }
 
-  if (i === articles.length) {
-    // Sinon, afficher 'Article indisponible...
+  // Est-ce que l'article est disponible ?
+  if (i > articles.length) {
+    // OUI
+    // Afficher "Ok"
+    console.log('ok');
+    // Remplacer l'article par une chaine vide '' dans le tableau
+    articles[i] = '';
+    // Vérifier s'il reste des articles disponibles
+    nbArticlesDisponibles--;
+  } else {
+    // NON
+    // Afficher 'Article indisponible...'
     console.log('Article indisponible...');
-  }
-
-  nbArticlesDisponibles = 0;
-  for (let j = 0; j < articles.length; j++) {
-    if (articles[j] !== '') {
-      nbArticlesDisponibles++;
-    }
   }
 }
 

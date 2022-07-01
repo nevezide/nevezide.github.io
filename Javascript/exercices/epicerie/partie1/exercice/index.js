@@ -2,7 +2,9 @@
  * - Un tableau contient une liste d'articles
  * - Les articles disponibles sont affichés au client
  * - Le programme demande au client quel article il veut acheter
- * - Le client choisi un article : il disparait de la liste d'articles
+ * - Le client choisi un article :
+ *   - s'il est disponible : afficher 'ok' et le faire disparaitre de la liste d'articles
+ *   - sinon afficher 'Article indisponible...'
  * - Les articles disponibles sont à nouveau affichés au client 
  */
 
@@ -19,12 +21,17 @@ const articles = [
 
 // Afficher la liste des articles disponibles
 
-// Demande au client quel article il veut acheter
+// Demander au client quel article il veut acheter
 
-// Vérifie si l'article est disponible
-  // S'il est présent dans le tableau :
-  // afficher "Ok" et le remplacer par une chaine vide '' dans le tableau
+// Vérifier si l'article est disponible
 
-  // Sinon, afficher 'Article indisponible...'
+// Est-ce que l'article est disponible ?
+
+  // OUI :
+  // Afficher 'ok'
+  // Remplacer l'article par une chaine vide '' dans le tableau
+
+  // NON :
+  // Afficher 'Article indisponible...'
 
 // Afficher à nouveau la liste des articles disponibles
