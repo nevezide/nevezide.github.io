@@ -22,3 +22,21 @@ while(true) {
   }
   break;
 }
+
+// Do ... while
+
+let nombre = prompt("Tape un nombre");
+
+while (isNaN(nombre)) {
+  nombre = prompt("Tape un nombre");
+}
+
+
+// => Mieux
+
+let nbre;
+
+do {
+  nbre = prompt("Tape un nombre");
+}
+while (isNaN(nbre))
