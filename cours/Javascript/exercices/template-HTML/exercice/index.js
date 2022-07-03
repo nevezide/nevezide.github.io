@@ -19,4 +19,10 @@ let data = {
 // - {{title}} par le champ title de data
 // - {{text}} par le champ text de data
 
+// Pour effectuer le remplacement, utiiser la méthode
+//   template.replaceAll(
+//     <chaine à remplacer>,
+//     <chaine de substitution>
+//   )
+
 // Afficher le résultat
