@@ -26,14 +26,17 @@ console.log(titi); // 3
 
   1. La fonction toto() est appelée
   2. Le code entre { et } est exécuté :
-    let a = 1;
-    let b = 2;
-    let c = a + b;
-  
+     let a = 1;
+     let b = 2;
+     let c = a + b;
+
   3. La fonction retourne la valeur de la variable c au code appelant
-    return c;
+     return c;
 
   4. La valeur de la variable c est stockée dans la variable titi
+
+     let titi <= return c <= toto();
+
   5. La valeur de la variable titi est affichée
  */
 
