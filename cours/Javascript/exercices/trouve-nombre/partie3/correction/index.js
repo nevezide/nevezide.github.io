@@ -10,6 +10,9 @@
  *
 */
 
+// !!! TODO : Add part 3 code !!!
+
+/*
 let nbreATrouver = Math.ceil(Math.random() * 100) + 9;
 let essaisRestants = 10;
 let saisieNombre;
@@ -43,3 +46,4 @@ do {
   }
 
 } while(saisieNombre !== nbreATrouver);
+*/

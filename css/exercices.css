@@ -15,16 +15,6 @@ section.level:target {
   height: 100%;
   padding: 0.3rem;
 }
-.level h2 {
-  margin-top: 1.2rem;
-  margin-bottom: 1.5rem;
-}
-.level h2.silver {
-  color: sienna;
-}
-.level h2.gold {
-  color: goldenrod;
-}
 
 /*************** Exercices ****************/
 .exercice {
@@ -81,7 +71,7 @@ section.level:target {
   justify-content: space-around;
 }
 .exercice-part {
-  width: 33%;
+  width: 32%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
