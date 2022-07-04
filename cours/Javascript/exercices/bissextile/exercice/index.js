@@ -2,11 +2,14 @@
  * Implémenter une fonction qui retourne true si l'année passée en paramètre
  * est bissextile.
  * 
- * Pour savoir si une année est bissextile, procédez comme suit :
- * 1. Si l'année est divisible par 4, passez à l'étape 2. ...
- * 2. Si l'année est divisible par 100, passez à l'étape 3. ...
- * 3. Si l'année est divisible par 400, passez à l'étape 4. ...
- * 4. L'année est une année bissextile (elle compte 366 jours).
+ * Une année est bisseextile si elle respecte un des 2 critères suivants :
+ * - C1 : Elle est divisible par 4 mais pas par 100
+ * - C2 : Elle est divisible par 400
+ * Autrement dit : pour être bissextile, une année doit dans tous les cas être divisible par 4 ;
+ * mais si c’est une année de centenaire (comme 1800, 1900, etc.), elle doit en complément être divisible par 400.
+ *
+ * Si une année ne respecte ni le critère C1 ni le critère C2, l'année n'est pas bissextile :
+ * elle a ainsi la durée habituelle de 365 jours ; on dit alors que c’est une année commune.
  */
 
 // Tant que l'utilisateur ne saisi pas une année
