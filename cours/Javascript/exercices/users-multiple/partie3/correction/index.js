@@ -3,8 +3,32 @@
 let users = [];
 
 /**
+ * Fonction créer un utilisateur
+ * 
+ * - Demande à l'utilisateur son nom, prenom, age
+ * - Créer l'utilisateur
+ * - Ajouter l'utilisateur à la collection
+ *
+ * @returns utilisateur créé
+ */
+ function creerUtilisateur() {
+  let nom = prompt("Quel est ton nom ?");
+  let prenom = prompt("Quel est ton prénom ?");
+  let age = Number(prompt("Quel est ton âge ?"));
+
+  let user = {
+    nom,
+    prenom,
+    age
+  };
+
+  users.push(user);
+
+  return user;
+}
+
+/**
  * Fonction Afficher Bonjour
- * (idem exercice users / partie 1)
  * 
  * - Afficher le message "Bonjour, je m'appelle <prenom> <nom>, j'ai <age> ans"
  *
@@ -22,34 +46,7 @@ function afficherBonjourUtilisateur(nom, prenom, age) {
 }
 
 /**
- * Fonction créer un utilisateur
- * (idem exercice users / partie 2)
- * 
- * - Demande à l'utilisateur son nom, prenom, age
- * - Créer l'utilisateur
- * - Ajouter l'utilisateur à la collection
- *
- * @returns utilisateur créé
- */
-function creerUtilisateur() {
-  let nom = prompt("Quel est ton nom ?");
-  let prenom = prompt("Quel est ton prénom ?");
-  let age = Number(prompt("Quel est ton âge ?"));
-
-  let user = {
-    nom,
-    prenom,
-    age
-  };
-
-  users.push(user);
-
-  return user;
-}
-
-/**
  * Fonction calculer moyenne ages
- * (idem exercice users / partie 3)
  */
 function calculerMoyenneAges() {
   let moyenne = 0;

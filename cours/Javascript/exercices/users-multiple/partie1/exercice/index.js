@@ -2,30 +2,16 @@
 // Collection d'utilisateurs
 let users = [];
 
-/**
- * Fonction Afficher Bonjour
- * (idem exercice users / partie 1)
- * 
- * - Afficher le message "Bonjour, je m'appelle <prenom> <nom>, j'ai <age> ans"
- *
- * @param {String} nom 
- * @param {String} prenom 
- * @param {Number} age 
- */
+// TODO: Ecrire la fonction creerUtilisateur, qui
+// - Demande à l'utilisateur son nom, prenom, age
+// - Créer l'objet user avec ces 3 propriétés
+// - Ajouter l'objet user à la collection users
+// - Retourne l'objet user
 
 
-
-/**
- * Fonction créer un utilisateur
- * (idem exercice users / partie 2)
- * 
- * - Demande à l'utilisateur son nom, prenom, age
- * - Créer l'objet utilisateur avec ces 3 propriétés
- * - Ajouter l'utilisateur à la collection users
- *
- * @returns utilisateur créé
- */
-
+// TODO: Ecrire la fonction creerUtilisateur, qui
+// - Prend en paramètres : nom, prenom et age
+// - Affiche le message "Bonjour, je m'appelle <prenom> <nom>, j'ai <age> ans"
 
 
 /******************* Programme principal *******************/ 

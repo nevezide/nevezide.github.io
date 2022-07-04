@@ -3,27 +3,7 @@
 let users = [];
 
 /**
- * Fonction Afficher Bonjour
- * (idem exercice users / partie 1)
- * 
- * - Afficher le message "Bonjour, je m'appelle <prenom> <nom>, j'ai <age> ans"
- *
- * @param {String} nom 
- * @param {String} prenom 
- * @param {Number} age 
- */
-function afficherBonjourUtilisateur(nom, prenom, age) {
-  console.log(
-    'Bonjour, je m\'appelle ' +
-    prenom + ' ' +
-    nom + ', ' +
-    'j\'ai ' + age + ' ans'
-  );
-}
-
-/**
  * Fonction créer un utilisateur
- * (idem exercice users / partie 2)
  * 
  * - Demande à l'utilisateur son nom, prenom, age
  * - Créer l'utilisateur
@@ -31,7 +11,7 @@ function afficherBonjourUtilisateur(nom, prenom, age) {
  *
  * @returns utilisateur créé
  */
-function creerUtilisateur() {
+ function creerUtilisateur() {
   let nom = prompt("Quel est ton nom ?");
   let prenom = prompt("Quel est ton prénom ?");
   let age = Number(prompt("Quel est ton âge ?"));
@@ -47,6 +27,23 @@ function creerUtilisateur() {
   return user;
 }
 
+/**
+ * Fonction Afficher Bonjour
+ * 
+ * - Afficher le message "Bonjour, je m'appelle <prenom> <nom>, j'ai <age> ans"
+ *
+ * @param {String} nom 
+ * @param {String} prenom 
+ * @param {Number} age 
+ */
+function afficherBonjourUtilisateur(nom, prenom, age) {
+  console.log(
+    'Bonjour, je m\'appelle ' +
+    prenom + ' ' +
+    nom + ', ' +
+    'j\'ai ' + age + ' ans'
+  );
+}
 
 /******************* Programme principal *******************/ 
 // Créer un utilisateur
