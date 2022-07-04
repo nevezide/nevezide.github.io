@@ -34,7 +34,7 @@ function afficherBonjourUtilisateur(nom, prenom, age) {
 function creerUtilisateur() {
   let nom = prompt("Quel est ton nom ?");
   let prenom = prompt("Quel est ton prénom ?");
-  let age = prompt("Quel est ton âge ?");
+  let age = Number(prompt("Quel est ton âge ?"));
 
   let user = {
     nom,
