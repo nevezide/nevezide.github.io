@@ -24,3 +24,14 @@ let html = template
 
 // Afficher le résultat
 console.log(html);
+
+/* Méthode 2
+
+  for(let key in data) {
+    template = template.replaceAll(
+      '{{' + key + '}}',
+      data[key]
+    )
+  }
+
+*/
