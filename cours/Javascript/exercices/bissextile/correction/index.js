@@ -12,20 +12,14 @@
  * elle a ainsi la durée habituelle de 365 jours ; on dit alors que c’est une année commune.
  */
 
-// Tant que l'utilisateur ne saisi pas une année
-  // Demander de saisir une année
-let annee;
-while(isNaN(annee)) {
-  annee = Number(prompt('Saisir une année'));
-}
-
 /**
  * Fonction isBissextile
  *
- * @param {Number} annee
- * @returns true si l'année est bissextile, false sinon
+ * @param {Number} annee - Année à vérifier
+ *
+ * @returns {Boolean} true si l'année est bissextile, false sinon
  */
-function isBissextile(annee) {
+ function isBissextile(annee) {
   if (annee % 4 === 0 && annee % 100 > 0) {
     return true;
   }
@@ -35,13 +29,20 @@ function isBissextile(annee) {
   return false;
 }
 
+// Tant que l'utilisateur ne saisi pas une année
+// Demander de saisir une année
+let saisieAnnee;
+while(isNaN(saisieAnnee)) {
+  saisieAnnee = Number(prompt('Saisir une année'));
+}
+
 // Si l'année est bissextile
-if (isBissextile(annee)) {
+if (isBissextile(saisieAnnee)) {
   // Afficher le message l'année xxxx est bissextile
-  console.log('L\'année ' + annee + ' est bissextile, elle a 366 jours');
+  console.log('L\'année ' + saisieAnnee + ' est bissextile, elle a 366 jours');
 } 
 // Sinon
 else {
   // Afficher le message l'année xxxx n'est pas bissextile
-  console.log('L\'année ' + annee + ' n\'est pas bissextile, elle a 365 jours');
+  console.log('L\'année ' + saisieAnnee + ' n\'est pas bissextile, elle a 365 jours');
 }
