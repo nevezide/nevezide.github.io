@@ -45,6 +45,7 @@ function estDansListeBlanche(email) {
  * @returns {Array<Email>} Liste d'email filtrée
  */
 function filtrerEmailRecus(email_recus) {
+  let emails_filtres = [];
   // Pour chaque email reçu
   for (let i = 0; i < email_recus.length; i++) {
     let receivedEmail = email_recus[i];
@@ -53,9 +54,11 @@ function filtrerEmailRecus(email_recus) {
     // Méthode 1
     if(estDansListeBlanche(receivedEmail)) {
       // Si oui, l'ajouter dans le tableau "boite réception"
-      boite_reception.push(receivedEmail);
+      emails_filtres.push(receivedEmail);
     }
   }
+
+  return emails_filtres;
 }
 
 /***************** Programme principal ***************/
