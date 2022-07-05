@@ -26,19 +26,23 @@ let photoDataList = [
   }
 ];
 
+/**************** Functions declaration ******************/
+
 // Create the HTML Element for a photo
 
 // Create the HTML Element for left button
 
 // Create the HTML Element for right button
 
-// Create the HTML Elements of the gallery
-// (and add to it : left / right buttons and the photos)
-
 // Manage the photo visibility :
 // - Will hide all photos
 // - And show the selected one
 
 // Select the photo to display : called when the user clic on left / right buttons
+
+// Create the HTML Elements of the gallery
+// (and add to it : left / right buttons and the photos)
+
+/********************* Main program **********************/
 
 // Initialisation of the gallery
