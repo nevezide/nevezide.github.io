@@ -67,3 +67,21 @@ console.log(tata); // 3
   4. Le résultat de a + b est stocké dans la variable tata
   5. La valeur de la variable tata est affichée
 */
+
+/******* !!! Faire des exos sur ces premières parties avant d'expliquer les suivantes !!! *******/
+
+// Valeur par défaut
+function calculTVA(montant, tva = 19.6) {
+  let montantTVA = montant * tva / 100;
+
+  return montantTVA;
+}
+
+// Fonctions récursives
+function fibonacci (x) {
+  if (x <= 1) {
+    return 1;
+  }
+
+  return fibonacci(x - 1) + fibonacci(x - 2);
+}
