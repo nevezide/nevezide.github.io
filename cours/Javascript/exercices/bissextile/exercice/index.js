@@ -12,17 +12,23 @@
  * elle a ainsi la durée habituelle de 365 jours ; on dit alors que c’est une année commune.
  */
 
+/*********************** Déclaration des fonctions **************************/
+
+// TODO : Ecrire la fonction isBissextile qui prend en paramètre une année
+//        et qui retourne true si l'année est bissextile, false dans le cas contraire
+
+/************************** Programme principal *****************************/
+
+// TODO écrire le programme principal :
+
 // Tant que l'utilisateur ne saisi pas une année
-  // Demander de saisir une année
+// Demander de saisir une année
 
-/**
- * Fonction isBissextile
- *
- * @param {Number} annee
- * @returns true si l'année est bissextile, false sinon
- */
-
+// Appeler la fonction isBissextile déclarée plus haut
 // Si l'année est bissextile
+
   // Afficher le message l'année xxxx est bissextile
+
 // Sinon
+
   // Afficher le message l'année xxxx n'est pas bissextile

@@ -12,6 +12,8 @@
  * elle a ainsi la durée habituelle de 365 jours ; on dit alors que c’est une année commune.
  */
 
+/*********************** Déclaration des fonctions **************************/
+
 /**
  * Fonction isBissextile
  *
@@ -29,6 +31,8 @@
   return false;
 }
 
+/************************** Programme principal *****************************/
+
 // Tant que l'utilisateur ne saisi pas une année
 // Demander de saisir une année
 let saisieAnnee;
@@ -36,6 +40,7 @@ while(isNaN(saisieAnnee)) {
   saisieAnnee = Number(prompt('Saisir une année'));
 }
 
+// Appeler la fonction isBissextile déclarée plus haut
 // Si l'année est bissextile
 if (isBissextile(saisieAnnee)) {
   // Afficher le message l'année xxxx est bissextile
