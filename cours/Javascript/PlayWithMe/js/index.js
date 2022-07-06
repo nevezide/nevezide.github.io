@@ -2,6 +2,13 @@
 
 console.log('Play With Me');
 
+// TODO : Modale
+// Lorsqu'on clique sur le bouton d'aide (identifiant : help-button)
+// Ouvrir la modale (identifiant popup-help)
+// Lorsque'on clique sur la croix en haut à droite de la modale,
+// (elle porte la classe close-button)
+// Fermer la modale
+
 // TODO : Couverture
 // La faire défiler de gauche à droite avec les flèches
 // L'image est contenue dna sun élément qui a la classe .main-cover
