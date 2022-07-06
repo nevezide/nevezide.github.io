@@ -1,25 +1,15 @@
+
+/********************** Layout ***********************/
+
 body {
   margin: 0em;
 }
 
-h1 {
-  text-align: center;
-}
 header, footer {
   background-color: #f1f1f1;
   padding: 2em;
   text-align: center;
   border: 1px solid #ccc;
-}
-
-.cover {
-  text-align: center;
-  width: 100%;
-  height: 20em;
-  margin: 1em;
-}
-.cover img {
-  height: 90%;
 }
 
 .warning {
@@ -56,4 +46,47 @@ footer {
   text-align: center;
   background-color: rgb(50, 50, 50);
   color: #fff;
+}
+
+/********************** Elements ***********************/
+
+.main-cover {
+  text-align: center;
+  width: 100%;
+  height: 20em;
+  margin: 1em;
+}
+.main-cover img {
+  height: 90%;
+}
+
+.race-chat-cover {
+  text-align: center;
+  position: relative;
+}
+.race-chat-cover::after {
+  display: none;
+  position: absolute;
+  top: -4rem;
+  right: 3rem;
+  width: 15rem;
+  height: 15rem;
+  background-image: url('../images/nuage.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: 'Miaaaaaaou !';
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 5rem;
+}
+.race-chat-cover button {
+  margin: 1rem;
+}
+
+/********************* Classes JS **********************/
+.visible {
+  display: block;
+}
+.hidden {
+  display: none;
 }
