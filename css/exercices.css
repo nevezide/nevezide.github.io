@@ -1,3 +1,17 @@
+/****************** Effects *******************/
+
+@keyframes shine {
+  0% { background-position: 200% 0%; }
+  100% { background-position: -200% 0%; }
+}
+
+@keyframes shake {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(2px, 2px) rotate(2deg); }
+  50% { transform: translate(0, 0) rotate(0deg); }
+  75% { transform: translate(-2px, 2px) rotate(-2deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
 
 /************** Level sections ****************/
 section.level {
@@ -38,6 +52,29 @@ section.level:target {
 .exercice__header h3 {
   margin: 0rem;
 }
+.has-demo {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.has-demo:hover {
+  animation: shake 0.2s linear infinite;
+  cursor: pointer;
+}
+.has-demo::after {
+  background: linear-gradient(90deg, dimgrey, dimgrey, lightgrey, dimgrey, dimgrey);
+  -webkit-background-clip: text;
+  background-size: 150%;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+  background-repeat: no-repeat;
+  content: attr(data-text);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
 .tag-list {
   display: flex;
   flex-direction: row;
