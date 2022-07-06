@@ -8,7 +8,7 @@
 // 2. Lorsque l'utilisateur clique sur le bouton "disco",
 // Afficher un dancefloor de lumières dans la grille
 
-// TODO : Ajouter les classes .js-color1, ... .js-color6 aléatoirement
+// TODO : Ajouter les classes .js-color1, ... .js-color5 aléatoirement
 
 
 // 3. Lorsque l'utilisateur clique sur le bouton "labyrinth",

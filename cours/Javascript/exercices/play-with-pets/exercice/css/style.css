@@ -133,9 +133,6 @@ footer {
   font-weight: bold;
 }
 /********************* Classes JS **********************/
-.visible {
+.js-visible, .js-visible::after {
   display: block;
-}
-.hidden {
-  display: none;
 }
