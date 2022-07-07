@@ -89,15 +89,25 @@ h2 {
   font-size: 1.5rem;
   padding: 0.2rem;
 }
+.ariane {
+  padding: 0.2em;
+  background-color: white;
+  border: solid 1px #00c4cc;
+  border-top: 0px;
+}
+.ariane a {
+  text-decoration: none;
+  color:#00afb2;
+}
+.ariane a:hover {
+  text-decoration: underline;
+}
+.ariane a + a::before {
+  content: '> ';
+}
+
 /*********************** Main content *******************************/
 .main-container {
   padding: 10px;
   width: 100%;
-  /*
-  background-image: url('../img/cover.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  z-index: -2;
-  */
 }

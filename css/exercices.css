@@ -63,11 +63,11 @@ section.level:target {
   cursor: pointer;
 }
 .has-demo::after {
-  background: linear-gradient(90deg, dimgrey, dimgrey, lightgrey, dimgrey, dimgrey);
+  background: linear-gradient(90deg, transparent, transparent, lightgrey, transparent, transparent);
   -webkit-background-clip: text;
   background-size: 150%;
   -webkit-text-fill-color: transparent;
-  animation: shine 3s linear infinite;
+  animation: shine 4s linear infinite;
   background-repeat: no-repeat;
   content: attr(data-text);
   position: absolute;
