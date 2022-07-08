@@ -63,6 +63,18 @@ button.labyrinth {
   top: 0px;
   left: 0px;
   border: 1px solid #000;
+  z-index: 2;
+}
+
+.cat {
+  background-image: url('../img/cat.png');
+  background-size: contain;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 1px solid #000;
   z-index: 1;
 }
 

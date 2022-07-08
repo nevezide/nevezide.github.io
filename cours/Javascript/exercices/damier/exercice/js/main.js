@@ -1,3 +1,24 @@
+/**************************************************************/
+/*                         Données                            */
+/**************************************************************/
+
+
+
+/**************************************************************/
+/*                        Fonctions                           */
+/**************************************************************/
+
+
+
+/**************************************************************/
+/*                      Event listeners                       */
+/**************************************************************/
+
+
+
+/**************************************************************/
+/*                       Main Program                         */
+/**************************************************************/
 document.addEventListener('DOMContentLoaded', () => {
 
   console.log('Damier');
@@ -8,19 +29,16 @@ document.addEventListener('DOMContentLoaded', () => {
   // TODO : Ajouter la classe .js-black sur les cases concernées
 
 
-
   // 2. Lorsque l'utilisateur clique sur le bouton "disco",
   // Afficher un dancefloor de lumières dans la grille
 
   // TODO : Ajouter les classes .js-color1, ... .js-color5 aléatoirement
 
 
-
   // 3. Lorsque l'utilisateur clique sur le bouton "labyrinth",
   // Afficher le motif présent sur le bouton dans la grille
 
   // TODO : Ajouter la classe .js-black sur les cases concernées
-
 
 
   // 4. Lorsque l'utilisateur enfonce le bouton de la souris sur une case (classe "cell"),
@@ -31,7 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // afficher "boom" sur fond rouge (utiliser la classe "js-boom")
 
 
-
   // 5. Lorsque l'utilisateur appuie sur une des 4 flèches du clavier,
   // Afficher bobby et le déplacer sur le grille (de case en case)
 
@@ -39,6 +56,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Le déplacer de case en case
   // dans la direction de la flèche appuyée
 
+
+  // 6. Chaque seconde, la div ayant l'id "cat" se déplace
+  // aléatoirement sur les cases du plateau
 
 
 });
