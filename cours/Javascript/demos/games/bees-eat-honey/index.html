@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>Bees eat honey</title>
+      <link rel="stylesheet" href="css/animate.min.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      <script src="js/game.js"></script>
+  </head>
+  <body>
+    <section class="sidebar">
+      <header>
+        <h1>Bees eat honey</h1>
+        <div class="level">Niveau 1</div>
+      </header>
+      <p class="instructions">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam architecto labore deserunt explicabo asperiores adipisci ipsam debitis, dolorem voluptate harum corrupti distinctio incidunt cupiditate voluptatem magnam, similique accusantium fugiat laborum.
+      </p>
+      <div class="editor">
+        <div class="javascript">
+          <div class="line-numbers">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10</div>
+          <pre class="before">
+function moveLeft(event) {
+  var bee = event.target;
+  var left = parseInt(bee.style.left);
+  left -= 50;
+  bee.style.left = left + 'px';
+}
+          </pre>
+          <textarea class="code" autofocus autocapitalize="none"></textarea>
+          <pre class="after"></pre>
+          <button class="next">Next</button>
+        </div>
+      </div>
+      <div class="keyboard">
+        <div class="keyboard-text">
+          <textarea placeholder="Dis-moi quelque chose"></textarea>
+        </div>
+        <div class="keyboard-arrows">
+          <div class="keyboard-arrows-row">
+            <div id="key-arrow-up" class="keyboard-arrow">&#8593;</div>
+          </div>
+          <div class="keyboard-arrows-row">
+            <div id="key-arrow-left" class="keyboard-arrow">&#8592;</div>
+            <div id="key-arrow-down" class="keyboard-arrow">&#8595;</div>
+            <div id="key-arrow-right" class="keyboard-arrow">&#8594;</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="view">
+      <div class="right-panel">
+        <div id="board" class="board">
+          <div id="flower" class="item flower"></div>
+          <div id="bee" class="item bee has-honey">
+            <pre class="say"></pre>
+          </div>
+          <div id="swarm" class="item swarm"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

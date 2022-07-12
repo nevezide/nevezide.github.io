@@ -1,0 +1,245 @@
+@import url('../../../../../../css/variables.css');
+
+/**************************************************************/
+/*                          Layout                            */
+/**************************************************************/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  background-color: lightseagreen;
+  color: var(--first-color);
+  font-family: var(--global-font-family);
+}
+
+.sidebar {
+  width: 50%;
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/**************************************************************/
+/*                          Effects                           */
+/**************************************************************/
+.button-animate {
+  animation: tada 1s, pulse 2s infinite 2s;
+}
+/**************************************************************/
+/*                           Board                            */
+/**************************************************************/
+.right-panel {
+  position: sticky;
+  top: 0;
+  width: 50vw;
+  height: 50vw;
+  min-width: 300px;
+  min-height: 300px;
+  max-width: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  padding: 1vw;
+  background-color: #84E4A8;/*#167544; #84E4A8; #1F5768; #d9efb3;*/
+  border-radius: 0.25rem;
+  box-shadow: -2px 2px 4px var(--box-shadow-color);
+}
+.board {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.item {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 8vw;
+  height: 8vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.flower {
+  background-image: url('../img/flower.png');
+}
+.bee {
+  background-image: url('../img/bee.png');
+  animation: pulse 1s infinite;
+}
+.has-honey::after {
+  position: absolute;
+  bottom: 0rem;
+  width: 100%;
+  height: 40%;
+  background-image: url('../img/honey.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 55% center;
+  content: '';
+}
+.swarm {
+  background-image: url('../img/swarm.png');
+}
+.say {
+  visibility: hidden;
+  position: absolute;
+  top: -10%;
+  left: 100%;
+  width: 80%;
+  height: 84%;
+  padding-top: 18%;
+  background-image: url('../img/nuage.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  font-size: 0.5rem;
+  overflow-wrap: break-word;
+}
+/**************************************************************/
+/*                        Code Editor                         */
+/**************************************************************/
+
+.editor {
+  font-family: monospace;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.javascript {
+  position: relative;
+  padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+  background-color: var(--third-background-color);
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  height: 20rem;
+}
+.line-numbers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 0.5rem 0.4rem;
+  text-align: right;
+  background-color: black;
+  opacity: 0.5;
+  color: var(--third-background-color);
+}
+pre {
+  display: block;
+  font-family: monospace;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #777;
+  margin: 0rem;
+}
+textarea.code {
+  display: block;
+  width: 100%;
+  height: 1.5rem;
+  border: none;
+  font-family: monospace;
+  font-size: 1rem;
+  outline: none;
+  resize: none;
+  overflow: auto;
+}
+button {
+  display: inline-block;
+  padding: 0.4em 0.8em;
+  background-color: var(--button1-background-color);
+  border: none;
+  border-radius: 0.25rem;
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--button1-color);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+button.next {
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+  padding-top: 0.3em;
+}
+button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/**************************************************************/
+/*                       User Interface                       */
+/**************************************************************/
+.keyboard {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.keyboard-arrows {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.keyboard-arrows-row {
+  display: flex;
+  justify-content: center;
+}
+.keyboard-arrow {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0.1rem;
+  background-color: var(--button1-background-color);
+  border: 2px solid var(--first-color);
+  border-radius: 0.25rem;
+  font-size: 3rem;
+  line-height: 2rem;
+  text-align: center;
+  cursor: not-allowed;
+  transition: background-color 1s ease-out;
+}
+
+.keyboard-text {
+  width: 50%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.keyboard-text textarea {
+  display: block;
+  width: 100%;
+  height: 4.5rem;
+  border: none;
+  font-family: monospace;
+  font-size: 1rem;
+  outline: none;
+  resize: none;
+  overflow: auto;
+}
+
+/**************************************************************/
+/*                     Javascript classes                     */
+/**************************************************************/
+
+.js-visible {
+  visibility: visible;
+}
+.js-key-down {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.js-key-up {
+  background-color: var(--button1-hover-background-color);
+  color: var(--button1-hover-color);
+  transition: background-color 1s ease-out;
+}

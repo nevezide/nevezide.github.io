@@ -1,0 +1,31 @@
+:root  {
+  /* Globals */
+  --global-font-family: 'Montserrat', sans-serif;
+  --first-background-color: white;
+  --second-background-color: #00c4cc;
+  --third-background-color: #B2EDF0;
+  --hover-background-color: #E8FAFA;
+  --first-color: white;
+  --second-color: #00c4cc;
+  --third-color: #00afb2;
+  --hover-color: var(--third-color);
+  --box-border-color: darkgrey;
+  --box-shadow-color: rgba(0, 73, 76, 0.3);
+
+  /* Layout */
+  --header-background-color: var(--second-background-color);
+  --header-shadow-color: var(--box-shadow-color);
+  --title1-color: var(--first-color);
+  --title2-color: var(--second-color);
+  --title3-color: dimgrey;
+  --tag-background-color: whitesmoke;
+  --tag-color: dimgrey;
+  --button1-background-color: var(--second-background-color);
+  --button1-color: var(--first-color);
+  --button1-hover-background-color: var(--hover-background-color);
+  --button1-hover-color: var(--hover-color);
+  --button2-background-color: var(--third-background-color);
+  --button2-color: var(--third-color);
+  --button2-hover-background-color: var(--hover-background-color);
+  --button2-hover-color: var(--hover-color);
+}

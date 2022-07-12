@@ -1,9 +1,11 @@
+@import url('./variables.css');
+
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--global-font-family);
 }
 
 body {
@@ -11,12 +13,13 @@ body {
   padding: 0;
   max-width: 1200px;
   margin: auto;
+  background-color: var(--first-background-color);
 }
 
 h2 {
   margin-top: 1.2rem;
   margin-bottom: 1.5rem;
-  color: #00C4CC;
+  color: var(--title2-color);
 }
 
 /**************************** Header *********************************/
@@ -25,17 +28,16 @@ h2 {
   top: 0;
   left: 0;
   z-index: 1;
+  box-shadow: 0px 2px 4px var(--header-shadow-color);
 }
 .header {
-  padding: 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  font-family: 'Montserrat';
-  background-color: #00c4cc;
-  color: white;
-  box-shadow: 0px 2px 4px rgb(0 73 76 / 30%);
+  padding: 0.5rem;
+  background-color: var(--second-background-color);
+  color: var(--title1-color);
 }
 .header a {
   text-decoration: none;
@@ -64,25 +66,23 @@ h2 {
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
-  border: 1px solid #00c4cc;
+  border: 1px solid var(--header-background-color);
   padding: 0rem;
   text-align: center;
-  background-color: white;
-  box-shadow: 0px 2px 4px rgba(0, 73, 76, 0.3);
 }
 .menu a {
   display: inline-block;
   width: 100%;
   padding: 0.5rem;
   text-decoration: none;
-  color: #00afb2;
-  background-color: rgb(0, 196, 204, 0.3);
+  color: var(--third-color);
+  background-color: var(--third-background-color);
 }
 .menu a:hover {
-  background-color: white;
+  background-color: var(--hover-background-color);
 }
 .menu a + a {
-  border-left: 1px solid #00c4cc;
+  border-left: 1px solid var(--header-background-color);
 }
 .menu .home {
   width: auto;
@@ -91,13 +91,13 @@ h2 {
 }
 .ariane {
   padding: 0.2em;
-  background-color: white;
-  border: solid 1px #00c4cc;
+  background-color: var(--first-background-color);
+  border: solid 1px var(--header-background-color);
   border-top: 0px;
 }
 .ariane a {
   text-decoration: none;
-  color:#00afb2;
+  color: var(--third-color);
 }
 .ariane a:hover {
   text-decoration: underline;

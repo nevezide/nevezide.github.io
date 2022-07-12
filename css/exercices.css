@@ -1,3 +1,5 @@
+@import url('./variables.css');
+
 /****************** Effects *******************/
 
 @keyframes shine {
@@ -32,13 +34,13 @@ section.level:target {
 
 /*************** Exercices ****************/
 .exercice {
-  border-radius: 0.375rem;
   width: 100%;
   padding: 1rem;
-  color: dimgrey;
-  background-color: white;
-  border: 1px solid darkgrey;
-  box-shadow: 2px 2px 4px rgba(0, 73, 76, 0.3);
+  border-radius: 0.375rem;
+  color: var(--title3-color);
+  background-color: var(--first-background-color);
+  border: 1px solid var(--box-border-color);
+  box-shadow: 2px 2px 4px var(--box-shadow-color)
 }
 .exercice + .exercice {
   margin-top: 2rem;
@@ -53,26 +55,26 @@ section.level:target {
   margin: 0rem;
 }
 .has-demo {
+  display: block;
   position: relative;
   text-decoration: none;
   color: inherit;
-  display: block;
 }
 .has-demo:hover {
   animation: shake 0.2s linear infinite;
   cursor: pointer;
 }
 .has-demo::after {
+  position: absolute;
+  left: 0px;
+  top: 0px;
   background: linear-gradient(90deg, transparent, transparent, lightgrey, transparent, transparent);
   -webkit-background-clip: text;
   background-size: 150%;
   -webkit-text-fill-color: transparent;
-  animation: shine 4s linear infinite;
+  animation:  shine 4s linear infinite;
   background-repeat: no-repeat;
   content: attr(data-text);
-  position: absolute;
-  left: 0px;
-  top: 0px;
 }
 
 .tag-list {
@@ -86,32 +88,32 @@ section.level:target {
   line-height: 0.6rem;
 }
 .tag {
-  border: 1px solid darkgrey;
-  border-radius: 0.375rem;
   padding: 0.3rem;
   margin-right: 0.3rem;
-  background-color: whitesmoke;
-  color: dimgrey;
+  border: 1px solid var(--box-border-color);
+  border-radius: 0.375rem;
+  background-color: var(--tag-background-color);
+  color: var(--tag-color);
 }
 .tag::before {
-  content: "";
   display: inline-block;
   width: 0.3rem;
   height: 0.3rem;
-  background-color: white;
-  border: 1px solid darkgrey;
-  border-radius: 50%;
   margin-right: 0.3rem;
+  content: "";
+  background-color: var(--first-background-color);
+  border: 1px solid var(--box-border-color);
+  border-radius: 50%;
 }
 .exercice-part-list {
   display: flex;
   justify-content: space-around;
 }
 .exercice-part {
-  width: 32%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 32%;
 }
 .exercice-part h4 {
   margin-top: 0rem;
@@ -123,26 +125,27 @@ section.level:target {
 }
 .exercice-content a {
   width: 49%;
-  border: 1px solid darkgrey;
   padding: 0.6rem;
-  text-decoration: none;
-  color: white;
+  border: 1px solid var(--box-border-color);
   border-radius: 0.375rem;
+  text-decoration: none;
   text-align: center;
 }
 .exercice-content .instruction {
-  background-color: rgb(0, 196, 204);
+  background-color: var(--button1-background-color);
+  color: var(--button1-color);
 }
 .exercice-content .instruction:hover {
-  background-color: rgba(178, 237, 240, 0.3);
-  color: #00afb2;
+  background-color: var(--button1-hover-background-color);
+  color: var(--button1-hover-color);
 }
 .exercice-content .correction {
-  background-color: rgb(178, 237, 240);
-  color: #00afb2;
+  background-color: var(--button2-background-color);
+  color: var(--button2-color);
 }
 .exercice-content .correction:hover {
-  background-color: rgba(178, 237, 240, 0.3);
+  background-color: var(--button2-hover-background-color);
+  color: var(--button2-hover-color);
 }
 /*************** Parts hidden to students ****************/
 .prof {
