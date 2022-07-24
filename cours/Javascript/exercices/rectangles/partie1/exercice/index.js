@@ -4,12 +4,11 @@
 /*
 
 On souhaite générer des rectangles de taille aléatoire.
-Pour chacun d'eux, on souhaite afficher leur surface.
 
 TODO
 - Créer la classe rectangle
-- Créer le constructeur qui prend en paramètre les dimensions du rectangle
-- Créer un accesseur qui retourne la surface du rectangle
+- Créer le constructeur qui prend en paramètre
+  les dimensions du rectangle (hauteur et largeur)
 
 */
 /**************************************************************/
@@ -29,5 +28,5 @@ for (let i = 0; i < 10; i++) {
     Math.floor(Math.random() * 10),
     Math.floor(Math.random() * 10)
   );
-  console.log(rect.area);
+  console.log(rect);
 }
