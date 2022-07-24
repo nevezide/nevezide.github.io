@@ -1,0 +1,36 @@
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  height: 100%;
+
+  .col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 35%;
+  }
+
+  .col2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 55%;
+  }
+
+  .title {
+    margin-bottom: 1em;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  img + img {
+    margin-top: 1em;
+  }
+}

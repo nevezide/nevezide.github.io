@@ -1,0 +1,31 @@
+.title-and-subtitle {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--first-background-color);
+
+  .header-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 67vh;
+    background-color: var(--first-background-color);
+    font-size: 19vh;
+    font-family: var(--title-font-familly);
+    font-weight: bold;
+  }
+
+  .header-subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 33vh;
+    background-color: var(--second-background-color);;
+    font-size: 5vh;
+    font-family: var(--code-font-familly);
+    font-weight: bold;
+  }
+}

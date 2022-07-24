@@ -1,0 +1,16 @@
+.cadre-horaires {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .icon {
+    position: absolute;
+    bottom: 10%;
+    left: -3%;
+    width: 30%;
+    height: 30%;
+    object-fit: contain;
+  }
+}

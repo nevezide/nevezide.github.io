@@ -1,0 +1,21 @@
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--second-background-color);
+}
+.section-header-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70vh;
+  height: 70vh;
+  background-color: var(--first-background-color);;
+  font-size: 12.5vh;
+  font-family: var(--title-font-familly);
+  font-weight: bold;
+  white-space: pre-line;
+}

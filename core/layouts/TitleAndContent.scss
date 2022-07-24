@@ -1,0 +1,29 @@
+.title-and-content {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 0.5em;
+  font-size: 10vh;
+
+  .header {
+    display: flex;
+    margin-bottom: 0.5em;
+    align-items: center;
+    background-color: var(--first-background-color);
+  }
+
+  .header-title {
+    font-size: 1em;
+    font-family: var(--title-font-familly);
+    font-weight: bold;
+  }
+
+  .main-content {
+    height: 80vh;
+    font-size: 3.5vh;
+    line-height: 6.5vh;
+    font-family: var(--code-font-familly);
+    color: var(--second-color);
+  }
+}

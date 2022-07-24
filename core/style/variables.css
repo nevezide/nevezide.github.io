@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+:root  {
+  /* Globals */
+  --global-font-family: 'Montserrat', sans-serif;
+  --first-background-color: white;
+  --second-background-color: #00FDC8;
+  --first-color: black;
+  --second-color: grey;
+  --title-font-familly: 'Amatic SC', cursive;
+  --code-font-familly: 'Source Code Pro', monospace;
+}
