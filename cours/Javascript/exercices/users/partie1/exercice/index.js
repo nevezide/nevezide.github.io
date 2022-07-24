@@ -1,8 +1,18 @@
+/**************************************************************/
+/*                          Consigne                          */
+/**************************************************************/
+/*
 
-// A partir des éléments présents dans toto,
-// afficher le message suivant :
+A partir des éléments présents dans toto, afficher le message suivant :
 
-// Bonjour, je m'appelle Toto Dupont, j'ai 37 ans
+    Bonjour, je m'appelle Toto Dupont, j'ai 37 ans
+
+*/
+/**************************************************************/
+/*                            Data                            */
+/**************************************************************/
+
+// DO NOT EDIT
 
 let toto = {
   nom: "Dupont",
@@ -10,4 +20,8 @@ let toto = {
   age: 37
 };
 
-// A toi de jouer !
+/**************************************************************/
+/*                        Main Program                        */
+/**************************************************************/
+
+// Le code sera implémenté ici...

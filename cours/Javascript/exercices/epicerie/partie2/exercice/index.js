@@ -1,7 +1,21 @@
-/* Epicerie - Variante de la partie 1
- * - On propose au client d'acheter un article
- *   tant qu'il y en a de disponibles
- */
+/**************************************************************/
+/*                          Consigne                          */
+/**************************************************************/
+/* 
+Epicerie - Variante de la partie 1
+
+On propose au client d'acheter un article tant qu'il y en a de disponibles
+
+// TODO
+Tant qu'il reste des articles différent de '',
+exécuter le programme de la partie 1
+
+*/
+/**************************************************************/
+/*                            Data                            */
+/**************************************************************/
+
+// DO NOT EDIT
 
 const articles = [
   'Chips',
@@ -14,23 +28,8 @@ const articles = [
   'Mouchoirs'
 ];
 
-// Tant qu'il reste des articles disponibles dans le tableau
-// (cad qui n'ont pas été remplacés par une chaine vide '')
+/**************************************************************/
+/*                        Main Program                        */
+/**************************************************************/
 
-  // Afficher la liste des articles disponibles
-
-  // Demander au client quel article il veut acheter
-
-  // Vérifier si l'article est disponible en recherchant sa position dans la liste
-
-  // Est-ce que l'article est disponible ?
-
-    // OUI
-      // Afficher "Ok"
-
-      // Remplacer l'article par une chaine vide '' dans le tableau
-
-      // Vérifier s'il reste des articles disponibles
-
-    // NON
-      // Afficher 'Article indisponible...'
+// Le code sera implémenté ici...

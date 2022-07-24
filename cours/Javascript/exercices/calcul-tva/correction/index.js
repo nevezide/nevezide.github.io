@@ -1,16 +1,23 @@
-/**
- * Implémenter le code qui calcule la TVA des montants ci-dessous :
- * - Utiliser une fonction pour calculer la TVA :
- * elle prend un montant en paramètre et retourne la TVA calculée
- */
+
+/**************************************************************/
+/*                            Data                            */
+/**************************************************************/
 
 const TVA = 19.6;
 
 const montantsHT = [12, 15, 20, 25, 30];
 
+/**************************************************************/
+/*                         Fonctions                          */
+/**************************************************************/
+
 function calculTva(montantsHT) {
   return montantsHT * (TVA / 100);
 }
+
+/**************************************************************/
+/*                        Main Program                        */
+/**************************************************************/
 
 for(var i = 0; i < montantsHT.length; i++) {
   console.log(calculTva(montantsHT[i]));

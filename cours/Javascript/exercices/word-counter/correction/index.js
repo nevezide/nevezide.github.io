@@ -1,6 +1,12 @@
-/** Compte le nombre de mots commençant par s */
+/**************************************************************/
+/*                            Data                            */
+/**************************************************************/
 
 let liste_mots = ['sapin', 'bougie', 'sucre', 'soleil', 'alphabet', 'trousse'];
+
+/**************************************************************/
+/*                        Main Program                        */
+/**************************************************************/
 
 // Parcourir la liste de mots
 let compteur = 0;
@@ -17,7 +23,10 @@ for(let i = 0; i < liste_mots.length; i++) {
 // Affiche le nombre de mots commençant par s
 console.log(`${compteur} lettres commençant par s`);
 
-// Seconde méthode
+/**************************************************************/
+/*                      (Seconde méthode)                     */
+/**************************************************************/
+
 /*
 let liste_mots = ['sapin', 'bougie', 'sucre', 'soleil', 'alphabet', 'trousse'];
 let compteur = 0;

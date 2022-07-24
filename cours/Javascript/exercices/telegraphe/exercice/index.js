@@ -1,3 +1,24 @@
+/**************************************************************/
+/*                          Consigne                          */
+/**************************************************************/
+/*
+
+L'objectif est de créer un télégraphe.
+Cela consiste à convertir un texte alphanumérique en code morse.
+Les espaces seront gardés tel quels.
+
+TODO
+- Demander à l'utilisateur de saisir un texte à télégraphier
+- Convertir le texte en code morse
+- Afficher le code morse dans la console
+
+*/
+/**************************************************************/
+/*                            Data                            */
+/**************************************************************/
+
+// DO NOT EDIT
+
 let alphabet = [
   'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
   'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
@@ -11,8 +32,8 @@ let codeMorse = [
   "-----"
 ];
 
-// Demander à l'utilisateur de saisir un texte à télégraphier
+/**************************************************************/
+/*                        Main Program                        */
+/**************************************************************/
 
-// Convertir le texte en code morse
-
-// Afficher le code morse dans la console
+// Le code sera implémenté ici...

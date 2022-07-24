@@ -1,4 +1,6 @@
-/******************** Jeu du morpion ********************/
+/**************************************************************/
+/*                         Variables                          */
+/**************************************************************/
 
 // Création du tableau de jeu, tel qu'il s'affichera dans la console
 let jeu = [
@@ -21,6 +23,10 @@ let numeroDeLaLigne = 0;
 
 // Définition de la variable qui contiendra le numéro de la colonne
 let numeroDeLaColonne = 0;
+
+/**************************************************************/
+/*                        Main Program                        */
+/**************************************************************/
 
 // Début de la boucle
 while (true) {

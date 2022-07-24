@@ -1,12 +1,33 @@
-/* Epicerie
- * - Un tableau contient une liste d'articles
- * - Les articles disponibles sont affichés au client
- * - Le programme demande au client quel article il veut acheter
- * - Le client choisi un article :
- *   - s'il est disponible : afficher 'ok' et le faire disparaitre de la liste d'articles
- *   - sinon afficher 'Article indisponible...'
- * - Les articles disponibles sont à nouveau affichés au client 
- */
+/**************************************************************/
+/*                          Consigne                          */
+/**************************************************************/
+/* 
+Epicerie
+
+Je suis un épicier, je possède une liste d'articles à vendre.
+Un client vient consulter ma liste d'articles.
+Il peut ou non en acheter un.
+Lorsqu'il décide d'en acheter un, celui-ci disparait de ma liste.
+
+// TODO
+- Un tableau contient la liste d'articles à vendre (dans Data).
+- La liste d'articles est affichée au client.
+- Le programme demande au client quel article il veut acheter
+- Le client choisi un article à acheter :
+  - si l'article est dans la liste : afficher 'ok' et le supprimer de la liste d'articles
+  - sinon afficher 'Article indisponible...'
+- Les articles sont à nouveau affichés au client 
+
+NOTE : Pour des raisons de simplicité,
+on simulera la suppression d'un article de la liste
+en le remplaçant par une chaine vide '' dans le tableau.
+
+*/
+/**************************************************************/
+/*                            Data                            */
+/**************************************************************/
+
+// DO NOT EDIT
 
 const articles = [
   'Chips',
@@ -19,19 +40,8 @@ const articles = [
   'Mouchoirs'
 ];
 
-// Afficher la liste des articles disponibles
+/**************************************************************/
+/*                        Main Program                        */
+/**************************************************************/
 
-// Demander au client quel article il veut acheter
-
-// Vérifier si l'article est disponible en recherchant sa position dans la liste
-
-// Est-ce que l'article est disponible ?
-
-  // OUI :
-  // Afficher 'ok'
-  // Remplacer l'article par une chaine vide '' dans le tableau
-
-  // NON :
-  // Afficher 'Article indisponible...'
-
-// Afficher à nouveau la liste des articles disponibles
+// Le code sera implémenté ici...

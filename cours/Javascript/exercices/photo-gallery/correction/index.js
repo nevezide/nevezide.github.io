@@ -1,4 +1,7 @@
-// Photo gallery data
+/**************************************************************/
+/*                            Data                            */
+/**************************************************************/
+
 let photoDataList = [
   {
     src: 'https://www.w3schools.com/w3images/fjords.jpg',
@@ -25,6 +28,10 @@ let photoDataList = [
     height: '400'
   }
 ];
+
+/**************************************************************/
+/*                         Functions                          */
+/**************************************************************/
 
 // Create the HTML Element for a photo
 function createPhotoHTMLElement(photoData) {
@@ -102,6 +109,10 @@ function showItem(n) {
 function switchItem(n) {
   showItem(slideIndex += n);
 }
+
+/**************************************************************/
+/*                        Main Program                        */
+/**************************************************************/
 
 // Initialisation of the gallery
 let slideIndex = 1;

@@ -1,12 +1,6 @@
-/* Epicerie
- * - Un tableau contient une liste d'articles
- * - Les articles disponibles sont affichés au client
- * - Le programme demande au client quel article il veut acheter
- * - Le client choisi un article :
- *   - s'il est disponible : afficher ok et le faire disparaitre de la liste d'articles
- *   - sinon afficher indisponible
- * - Les articles disponibles sont à nouveau affichés au client 
- */
+/**************************************************************/
+/*                            Data                            */
+/**************************************************************/
 
 const articles = [
   'Chips',
@@ -18,6 +12,10 @@ const articles = [
   'Bière',
   'Mouchoirs'
 ];
+
+/**************************************************************/
+/*                        Main Program                        */
+/**************************************************************/
 
 // Afficher la liste des articles disponibles
 console.log(articles);

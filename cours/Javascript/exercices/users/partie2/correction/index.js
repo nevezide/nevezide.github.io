@@ -1,5 +1,6 @@
-// Voici une collection : cad un tableau d'objets de même type
-// Tu vois la syntaxe ?
+/**************************************************************/
+/*                            Data                            */
+/**************************************************************/
 
 let users = [
   {
@@ -8,6 +9,10 @@ let users = [
     age: 37
   }
 ];
+
+/**************************************************************/
+/*                        Main Program                        */
+/**************************************************************/
 
 // Demander à l'utilisateur de saisir son prenom, nom, age
 // NOTE : penser à gérer les types de valeurs

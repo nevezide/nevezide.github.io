@@ -1,7 +1,6 @@
-/* Epicerie - Variante de la partie 1
- * - On propose au client d'acheter un article
- *   tant qu'il y en a de disponibles
- */
+/**************************************************************/
+/*                            Data                            */
+/**************************************************************/
 
 const articles = [
   'Chips',
@@ -15,6 +14,10 @@ const articles = [
 ];
 
 let nbArticlesDisponibles = articles.length;
+
+/**************************************************************/
+/*                        Main Program                        */
+/**************************************************************/
 
 // Tant qu'il reste des articles disponibles dans le tableau
 // (cad qui n'ont pas été remplacés par une chaine vide '')

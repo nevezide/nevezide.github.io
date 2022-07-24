@@ -1,12 +1,24 @@
-/* 
-  Règles :
-  - Feuille gagne contre Pierre : La feuille enveloppe la pierre
-  - Pierre gagne contre Ciseaux : La pierre détruit les ciseaux
-  - Ciseaux gagne contre Feuille : Les ciseaux coupent la feuille
+/**************************************************************/
+/*                          Consigne                          */
+/**************************************************************/
+/*
 
-  Algorithme à implémenter :
-    - Choix aléatoire de l'ordinateur entre : feuille / pierre / ciseaux
-    - Demander à l'utilisateur son choix entre : feuille / pierre / ciseaux
-    - Déterminer le vainqueur (égalité si l'ordinateur et le joueur ont choisi la même chose)
-    - Afficher le vainqueur
-  */
+Implémenter le célèbre jeu de chifoumi en trois manches.
+
+Ajouter au code de la partie 1, la gestion des 3 manches.
+Lors de chaque manche :
+- Calculer le score de l'ordinateur et du joueur
+- Afficher le score final
+
+*/
+/**************************************************************/
+/*                         Variables                          */
+/**************************************************************/
+
+// Les variables à mettre ici...
+
+/**************************************************************/
+/*                        Main Program                        */
+/**************************************************************/
+
+// Le code du programme à écrire ici...

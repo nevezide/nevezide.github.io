@@ -1,3 +1,7 @@
+/**************************************************************/
+/*                            Data                            */
+/**************************************************************/
+
 // Sélectionne une lettre au hasard dans l'alphabet
 let alphabet = "abcdefghijklmnopqrstuvwxyz";
 let lettreAtrouver = alphabet.charAt(
@@ -5,6 +9,10 @@ let lettreAtrouver = alphabet.charAt(
 );
 
 let utilisateur = "";
+
+/**************************************************************/
+/*                        Main Program                        */
+/**************************************************************/
 
 // Tant que l'utilisateur n'a pas trouvé la lettre
 while (utilisateur !== lettreAtrouver) {

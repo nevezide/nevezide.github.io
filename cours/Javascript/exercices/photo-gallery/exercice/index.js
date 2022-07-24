@@ -1,4 +1,28 @@
-// Photo gallery data
+/**************************************************************/
+/*                          Consigne                          */
+/**************************************************************/
+/*
+
+L'objectif de cet exercice est de réaliser une galerie photo
+avec deux flèches gauche et droite pour naviguer entre les photos.
+Le code doit être compréhensible et simple (utiliser des fonctions pour se faire).
+
+Exemple d'algorithme (pour t'aider) :
+- Create the HTML Element for one photo
+- Create the HTML Element for left button
+- Create the HTML Element for right button
+- Manage the photo visibility :
+ - Will hide all photos
+ - And show the selected one
+- Select the photo to display : called when the user clic on left / right buttons
+- Create the gallery with the photos and the buttons
+- Launch the gallery (display the first photo)
+
+*/
+/**************************************************************/
+/*                            Data                            */
+/**************************************************************/
+
 let photoDataList = [
   {
     src: 'https://www.w3schools.com/w3images/fjords.jpg',
@@ -25,24 +49,14 @@ let photoDataList = [
     height: '400'
   }
 ];
+/**************************************************************/
+/*                         Functions                          */
+/**************************************************************/
 
-/**************** Functions declaration ******************/
+// Les fonctions seront implémentées ici...
 
-// Create the HTML Element for a photo
+/**************************************************************/
+/*                        Main Program                        */
+/**************************************************************/
 
-// Create the HTML Element for left button
-
-// Create the HTML Element for right button
-
-// Manage the photo visibility :
-// - Will hide all photos
-// - And show the selected one
-
-// Select the photo to display : called when the user clic on left / right buttons
-
-// Create the HTML Elements of the gallery
-// (and add to it : left / right buttons and the photos)
-
-/********************* Main program **********************/
-
-// Initialisation of the gallery
+// La galerie sera lancée ici (en affichant la première photo)...

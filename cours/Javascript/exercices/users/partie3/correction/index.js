@@ -1,5 +1,6 @@
-// Voici une collection : cad un tableau d'objets de même type
-// Tu vois la syntaxe ?
+/**************************************************************/
+/*                            Data                            */
+/**************************************************************/
 
 let users = [
   {
@@ -20,6 +21,10 @@ let users = [
     age: 12
   }
 ];
+
+/**************************************************************/
+/*                        Main Program                        */
+/**************************************************************/
 
 // Pour chaque user, afficher le message suivant
 for (let i = 0; i < users.length; i++) {

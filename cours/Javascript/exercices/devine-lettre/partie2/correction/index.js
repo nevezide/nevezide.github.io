@@ -1,6 +1,13 @@
+/**************************************************************/
+/*                            Data                            */
+/**************************************************************/
 
 let alphabet = "abcdefghijklmnopqrstuvwxyz";
 let utilisateur = "";
+
+/**************************************************************/
+/*                        Main Program                        */
+/**************************************************************/
 
 // Tant que l'utilisateur veut continuer de jouer
 while(utilisateur !== "non") {
@@ -22,3 +29,4 @@ while(utilisateur !== "non") {
   // On demande à l'utilisateur si il veut continuer de jouer
   utilisateur = prompt("Voulez-vous continuer de jouer ? (oui/non)");
 }
+ 

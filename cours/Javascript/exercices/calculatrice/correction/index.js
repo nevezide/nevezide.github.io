@@ -1,3 +1,6 @@
+/**************************************************************/
+/*                        Main Program                        */
+/**************************************************************/
 
 // Demander à l'utilisateur d'entrer un premier nombre
 let userInput1 = Number(

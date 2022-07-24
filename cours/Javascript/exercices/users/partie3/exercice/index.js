@@ -1,5 +1,21 @@
-// Voici une collection : cad un tableau d'objets de même type
-// Tu vois la syntaxe ?
+/**************************************************************/
+/*                          Consigne                          */
+/**************************************************************/
+/*
+
+TODO
+- Pour chaque objet du tableau users, afficher le message suivant :
+  Il y a Toto Dupont, 37 ans
+
+- Puis calculer et afficher la moyenne des âges
+INFO : Moyenne = SOMME(age) / nombre de users
+
+*/
+/**************************************************************/
+/*                            Data                            */
+/**************************************************************/
+
+// DO NOT EDIT
 
 let users = [
   {
@@ -21,8 +37,8 @@ let users = [
   }
 ];
 
-// Pour chaque user, afficher le message suivant
-  // "Il y a Toto Dupont, 37 ans"
+/**************************************************************/
+/*                        Main Program                        */
+/**************************************************************/
 
-// Puis calculer et afficher la moyenne des âges
-  // INFO : Moyenne = SOMME(age) / nombre de users
+// Le code sera implémenté ici...

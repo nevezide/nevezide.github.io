@@ -1,3 +1,6 @@
+/**************************************************************/
+/*                            Data                            */
+/**************************************************************/
 
 const liste_blanche = [
   'larissa@gmail.com',
@@ -17,6 +20,10 @@ const email_recus = [{
   from: 'hacker@gmail.com',
   content: 'Piratage en cours...',
 }];
+
+/**************************************************************/
+/*                         Fonctions                          */
+/**************************************************************/
 
 /**
  * Vérifie si un email est autorisé
@@ -61,7 +68,9 @@ function filtrerEmailRecus(email_recus) {
   return emails_filtres;
 }
 
-/***************** Programme principal ***************/
+/**************************************************************/
+/*                        Main Program                        */
+/**************************************************************/
 
 // Filtre les email reçus et récupère la liste d'email filtrée
 const boite_reception = filtrerEmailRecus(email_recus);
