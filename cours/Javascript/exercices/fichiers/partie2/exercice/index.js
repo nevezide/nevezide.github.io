@@ -3,22 +3,25 @@
 /**************************************************************/
 /*
 
-L'objectif de cet exercice est de créer un système de fichiers.
-3 choses seront à implémenter :
-- SystemElement : contient les choses en commun aux fichiers et dossiers,
-cad le nom et les droits d'accès.
-- Fichier : contient le contenu d'un fichier.
-- Dossier : contient des fichiers et des dossiers.
+L'objectif de cet exercice est de permettre
+- d'ajouter des fichiers et dossiers dans un dossier
+- lister les fichiers et dossiers d'un dossier
 
 TODO
-1. Dans la classe Dossier, ajouter une méthode addElement qui prend en paramètre un élément (Fichier ou Dossier)
-et qui l'ajoute à la liste des éléments de ce dossier.
-2. Dans la classe Dossier, ajouter une méthode listElements qui affiche une liste des éléments de ce dossier.
+1. Dans la classe Dossier, ajouter une méthode addElement qui prend en paramètre un SystemElement
+et qui l'ajoute à la liste des éléments (propriété elements) de ce dossier.
+
+2. Dans la classe Dossier, ajouter une méthode listElements qui affiche la liste des éléments de ce dossier.
 Ils seront affichés sous cette forme :
-./fichier1.txt
-./fichier2.txt
-./dossier1/fichier3.txt
-./dossier1/fichier4.txt
+./root/fichier1.txt
+./root/fichier2.txt
+./root/dossier1/fichier3.txt
+./root/dossier1/fichier4.txt
+
+-> TIP : pour savoir si un élément est un Dossier, utiliser la syntaxe suivante :
+if (element instanceof Dossier) {
+  // C'est un dossier
+}
 
 */
 /**************************************************************/
@@ -42,13 +45,13 @@ dossier1.addElement(new Fichier('fichier4.txt'));
 dossierRacine.addElement(dossier1);
 
 // Affichage de l'arborescence du dossier racine
-let elements = dossierRacine.listElements();
-console.log(elements);
+dossierRacine.listElements();
+
 /** Voici ce qui doit s'afficher
 
-./fichier1.txt
-./fichier2.txt
-./dossier1/fichier3.txt
-./dossier1/fichier4.txt
+./root/fichier1.txt
+./root/fichier2.txt
+./root/dossier1/fichier3.txt
+./root/dossier1/fichier4.txt
 
 */

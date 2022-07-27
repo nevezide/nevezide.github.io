@@ -3,17 +3,16 @@
 /**************************************************************/
 /*
 
-L'objectif de cet exercice est de créer un système de fichiers.
-3 choses seront à implémenter :
-- SystemElement : contient les choses en commun aux fichiers et dossiers,
-cad le nom et les droits d'accès.
-- Fichier : contient le contenu d'un fichier.
-- Dossier : contient des fichiers et des dossiers.
+L'objectif de cet exercice est de
+- Rechercher un élément dans un dossier
+- Supprimer un élément dans un dossier
 
 TODO
 1. Dans la classe Dossier, ajouter une méthode findElement(name) qui retourne l'élément dont le nom est name.
+-> Rechercher sur internet comment rechercher un élément dans un tableau.
 
 2. Dans la classe Dossier, ajouter une méthode removeElement(element) qui supprime l'élément passé en paramètre.
+-> Rechercher sur internet comment supprimer un élément dans un tableau.
 
 */
 /**************************************************************/
@@ -37,8 +36,7 @@ dossier1.addElement(new Fichier('fichier4.txt'));
 dossierRacine.addElement(dossier1);
 
 // Affichage de l'arborescence du dossier racine
-let elements = dossierRacine.listElements();
-console.log(elements);
+dossierRacine.listElements();
 
 // Recherche d'un fichier dans le dossier racine
 let fichier3 = dossier1.findElement('fichier3.txt');
@@ -48,5 +46,4 @@ console.log(fichier3.content);
 dossier1.removeElement(fichier3);
 
 // Affichage de l'arborescence du dossier racine
-elements = dossierRacine.listElements();
-console.log(elements);
+dossierRacine.listElements();
