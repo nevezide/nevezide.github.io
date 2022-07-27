@@ -1,19 +1,3 @@
-/**************************************************************/
-/*                         Consignes                          */
-/**************************************************************/
-/*
-
-L'objectif de cet exercice est de rechercher un élément dans un dossier
-
-TODO
-Dans la classe Dossier, ajouter une méthode findElement(name)
-qui retourne l'élément dont le nom est name.
-NOTE : Elle doit aussi chercher dans les sous-dossiers.
-
-*/
-/**************************************************************/
-/*                    !!! DO NOT EDIT !!!                     */
-/**************************************************************/
 import Dossier from './modules/Dossier.js';
 import Fichier from './modules/Fichier.js';
 
@@ -38,3 +22,8 @@ dossierRacine.listElements();
 let fichier3 = dossierRacine.findElement('fichier3.txt');
 // Affichage du contenu du fichier trouvé
 console.log(fichier3.content);
+// Suppression du fichier trouvé
+dossierRacine.removeElement(fichier3);
+
+// Affichage de l'arborescence du dossier racine
+dossierRacine.listElements();

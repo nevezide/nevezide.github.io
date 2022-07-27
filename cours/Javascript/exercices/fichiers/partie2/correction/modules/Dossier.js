@@ -13,11 +13,14 @@ class Dossier extends SystemElement {
   }
 
   listElements(dossierCourant = '.') {
+    // On parcoure la liste des elements du dossier
     return this.elements.forEach(element => {
+      // Si on a trouvé un sous-dossier, on affiche son contenu
       if (element instanceof Dossier) {
         element.listElements(`${dossierCourant}/${element.name}`);
         return;
       }
+      // Si on a trouvé un fichier, on affiche son chemin
       console.log(`${dossierCourant}/${element.name}`);
     });
   }

@@ -19,11 +19,6 @@ dossierRacine.addElement(dossier1);
 dossierRacine.listElements();
 
 // Recherche d'un fichier dans le dossier racine
-let fichier3 = dossier1.findElement('fichier3.txt');
+let fichier3 = dossierRacine.findElement('fichier3.txt');
 // Affichage du contenu du fichier trouvé
 console.log(fichier3.content);
-// Suppression du fichier trouvé
-dossier1.removeElement(fichier3);
-
-// Affichage de l'arborescence du dossier racine
-dossierRacine.listElements();

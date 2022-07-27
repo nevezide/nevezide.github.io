@@ -3,12 +3,13 @@
 /**************************************************************/
 /*
 
-L'objectif de cet exercice est de rechercher un élément dans un dossier
+L'objectif de cet exercice est de supprimer un élément dans un dossier
 
 TODO
-Dans la classe Dossier, ajouter une méthode findElement(name)
-qui retourne l'élément dont le nom est name.
-NOTE : Elle doit aussi chercher dans les sous-dossiers.
+Dans la classe Dossier, ajouter une méthode removeElement(element)
+qui supprime l'élément passé en paramètre.
+NOTE : Si le fichier se trouve dnas un sous-dossier,
+il doit être supprimé dans ses élements.
 
 */
 /**************************************************************/
@@ -38,3 +39,8 @@ dossierRacine.listElements();
 let fichier3 = dossierRacine.findElement('fichier3.txt');
 // Affichage du contenu du fichier trouvé
 console.log(fichier3.content);
+// Suppression du fichier trouvé
+dossierRacine.removeElement(fichier3);
+
+// Affichage de l'arborescence du dossier racine
+dossierRacine.listElements();

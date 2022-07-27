@@ -12,6 +12,24 @@ class Dossier extends SystemElement {
     this.elements.push(element);
   }
 
+  removeElement(element) {
+    // On recherche dans les elements du dossier le fichier à supprimer
+    let index = this.elements.indexOf(element);
+    // Si on l'a trouvé, on le supprime
+    if (index > -1) {
+      this.elements.splice(index, 1);
+      return;
+    }
+
+    // Si on l'a pas trouvé, on recherche dans les sous-dossiers
+    for (let i = 0; i < this.elements.length; i++) {
+      let currentElement = this.elements[i];
+      if (currentElement instanceof Dossier) {
+        currentElement.removeElement(element);
+      }
+    }
+  }
+
   findElement(name) {
     // On parcoure la liste des elements du dossier
     for (let i = 0; i < this.elements.length; i++) {
