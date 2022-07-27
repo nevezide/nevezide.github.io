@@ -19,8 +19,8 @@ class Rectangle {
 
 for (let i = 0; i < 10; i++) {
   let rect = new Rectangle(
-    Math.floor(Math.random() * 10),
-    Math.floor(Math.random() * 10)
+    Math.ceil(Math.random() * 10),
+    Math.ceil(Math.random() * 10)
   );
   console.log(rect);
 }
