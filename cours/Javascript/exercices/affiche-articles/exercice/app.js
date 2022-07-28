@@ -11,8 +11,6 @@ dans un tableau HTML
 /*                    !!! DO NOT EDIT !!!                     */
 /**************************************************************/
 
-// !!! DO NOT EDIT !!!
-
 let articles = [{
   name: 'Pantalon bleu',
   price: '100',
