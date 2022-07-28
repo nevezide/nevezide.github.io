@@ -46,3 +46,5 @@ gateau1.faireCharlotte();
 const gateau2 = new Tourte('cerises');
 gateau2.faireGonfler();// Méthode de la classe parente
 gateau2.faireTourte();
+
+// Exercice animaux

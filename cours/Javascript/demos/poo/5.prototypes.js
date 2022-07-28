@@ -1,3 +1,6 @@
+// On ne s'étale pas trop là dessus
+// A montrer en toute fin de journée
+
 // Soit la classe suivante :
 class Moule {
   forme;

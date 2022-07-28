@@ -22,3 +22,6 @@ class Composant {
 // 2. Créer un nouveau composant qui affiche "Hello World"
 // let composant = new Composant('Hello World');
 // document.write(composant.render());
+
+
+// Exercice final : Systèmes de fichiers

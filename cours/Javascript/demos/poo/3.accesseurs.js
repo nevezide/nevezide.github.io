@@ -30,3 +30,5 @@ gateau1.forme = 'carré' // Call setter
 console.log(
   gateau1.forme // Call getter
 );
+
+// Exercice rectagle partie 3
