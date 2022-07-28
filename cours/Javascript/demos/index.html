@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1200, initial-scale=1.0">
+  <title>Démonstrations</title>
+  <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+  <style>
+    .hljs-keyword {
+      color: #0060A0;
+    }
+    .hljs-string {
+      color: #CC9999;
+    }
+    .hljs-number {
+      color: #99AA66;
+    }
+    .hljs-comment {
+      color: #009900;
+    }
+    .hljs-variable.language_ {
+      color: #990000;
+    }
+    .hljs-title.function_ {
+      color: #999900;
+    }
+  </style>
+</head>
+<body>
+  <pre>
+  <code class="language-javascript">
+    let toto = ["banane", "pomme", "poire"];
+    const tailleTableauToto = toto.length;
+    
+    for(let i = 0; i &lt; tailleTableauToto; i++) {
+      let element = toto[i];// On récupère l'élément du tableau à l'index i
+      console.log(element);// Affiche chaque élément du tableau
+    }
+  </code></pre>
+  <script>hljs.highlightElement(document.querySelector('code'));</script>
+</body>
+</html>
