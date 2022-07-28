@@ -6,3 +6,5 @@ new Vue({
   },
   template: '<div>{{ message }}</div>',
 });
+
+// Faire 3.data-binding

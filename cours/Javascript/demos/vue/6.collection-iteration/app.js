@@ -33,3 +33,7 @@ new Vue({
     </table>
   `,
 });
+
+// Faire exercice "Afficher Articles"
+
+// C'est tout pour aujourd'hui

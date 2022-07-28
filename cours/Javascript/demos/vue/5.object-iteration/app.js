@@ -23,3 +23,5 @@ new Vue({
     </table>
   `,
 });
+
+// Faire 6.collection-iteration

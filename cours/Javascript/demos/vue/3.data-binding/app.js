@@ -13,3 +13,8 @@ new Vue({
     <p v-text="message"></p>
   </form>`,
 });
+
+// Faire exercice perroquet
+
+// Puis Faire 4.array-iteration
+

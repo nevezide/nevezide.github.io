@@ -13,3 +13,5 @@ new Vue({
     </div>
   `,
 });
+
+// Faire 5.object-iteration
