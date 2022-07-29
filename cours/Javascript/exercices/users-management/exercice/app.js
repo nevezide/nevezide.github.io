@@ -15,15 +15,6 @@ Cet utilisateur se trouve dans la variable userToAdd.
 */
 
 /**************************************************************/
-/*                        Variables                           */
-/**************************************************************/
-
-let userToAdd = {
-  name: 'DURAND',
-  firstName: 'Jacques',
-};
-
-/**************************************************************/
 /*                          La vue                            */
 /**************************************************************/
 
@@ -33,6 +24,10 @@ let userToAdd = {
 new Vue({
   el: '#app',
   data: {
+    userToAdd: {
+      name: 'DURAND',
+      firstName: 'Jacques',
+    },
     users: [
       {
         name: 'VALLEE',

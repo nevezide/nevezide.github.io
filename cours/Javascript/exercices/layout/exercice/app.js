@@ -8,23 +8,24 @@ nécessaires au fonctionnement de la vue ci-dessous.
 
 */
 /**************************************************************/
-/*                    !!! DO NOT EDIT !!!                     */
+/*                            La Vue                          */
 /**************************************************************/
+
+// Ajouter le code nécéssaire pour implémenter les consignes.
+// Ne rien modifier dans le code ci-dessous, seulement ajouter ce qui est nécéssaire.
 
 new Vue({
   el: '#app',
   data: {
-    title: 'Welcome !',
-    copyright: 'Nevezide 2022',
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
   },
   template: `
     <div class="container">
-      <Header :title=title />
+      <Header title="Welcome !" />
       <Main>
         <p>{{ content }}</p>
       </Main>
-      <Footer :copyright=copyright />
+      <Footer copyright="Nevezide 2022" />
     </div>
   `,
 });

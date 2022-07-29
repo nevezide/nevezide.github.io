@@ -14,15 +14,6 @@ Lorsqu'on clique sur ce bouton, on ajoute un utilisateur à la fin de la liste.
 */
 
 /**************************************************************/
-/*                        Variables                           */
-/**************************************************************/
-
-let userToAdd = {
-  name: 'DURAND',
-  firstName: 'Jacques',
-};
-
-/**************************************************************/
 /*                          La vue                            */
 /**************************************************************/
 
@@ -31,6 +22,10 @@ let userToAdd = {
 new Vue({
   el: '#app',
   data: {
+    userToAdd: {
+      name: 'DURAND',
+      firstName: 'Jacques',
+    },
     users: [
       {
         name: 'VALLEE',
